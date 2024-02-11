@@ -1,3 +1,5 @@
+'use client'
+
 import style from '@/componets/header/header.module.scss'
 import Image from 'next/image'
 import Logo from '@/assets/logo.svg'

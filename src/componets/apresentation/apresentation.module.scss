@@ -22,7 +22,7 @@
 }
 
 .button {
-  margin-top: 130px;
+  margin-top: 80px;
   width: 320px;
   height: 45px;
   font-size: 1.6rem;
@@ -30,4 +30,11 @@
   color: #FFF;
   background-color: var(--secondary-color-text);
   border-radius: 15px;
+}
+
+.social {
+  padding: 5rem 0;
+  display: flex;
+  column-gap: 1.5rem;
+  font-size: 3rem;
 }
