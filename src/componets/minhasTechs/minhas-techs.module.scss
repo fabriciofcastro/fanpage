@@ -1,0 +1,49 @@
+.container {
+  padding: 50px 0;
+
+  h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    
+     .sobrenome, .skill {
+        color: var(--secondary-color-text);
+     }
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    
+  }
+
+  .hardSkill {
+    padding: 40px 0;
+  }
+
+  p {
+    font-size: 1.6rem;
+    width: 800px;
+  }
+
+  .techs {
+    display: grid ;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+
+      span {
+        font-size: 2rem;
+        font-weight: 700;
+      }
+  }
+
+  .contentTechs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    row-gap: 2rem;
+  }
+}
+

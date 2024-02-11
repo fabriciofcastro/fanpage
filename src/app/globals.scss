@@ -7,6 +7,14 @@
 :root {
    font-family: 'Poppins', sans-serif;
    font-size: 62.5%;
+	 color: var(--primary-color-text);
+
+
+	 /* Variáveis de cores */
+
+	 --primary-color-text: #445964;
+	 --secondary-color-text: #263138; 
+	
 }
  
 html, body, div, span, applet, object, iframe,
@@ -37,6 +45,12 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
 ol, ul {
 	list-style: none;
 }
