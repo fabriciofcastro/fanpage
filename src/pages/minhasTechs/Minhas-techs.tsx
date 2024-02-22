@@ -4,7 +4,6 @@ import style from '@/pages/minhasTechs/minhas-techs.module.scss'
 import Image from 'next/image'
 import Logo from '@/assets/logo.svg'
 import { techs } from './techs'
-const { uuid } = require('uuidv4');
 
 export const MinhasTechs = () => {
   return (
@@ -26,9 +25,9 @@ export const MinhasTechs = () => {
 
       <section className={ style.techs }>
         {
-          techs.map(tech => {
+          techs.map((tech, index) => {
             return (
-              <div className={ style.contentTechs } key={ uuid() } >
+              <div className={ style.contentTechs } key={ index } >
                 <span>{ tech.tech }</span>
                 <Image src={ tech.image } alt='Imagens que ilustra nível de competência de hard skill' />
               </div>
