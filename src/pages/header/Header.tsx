@@ -5,7 +5,7 @@ import Image from 'next/image'
 import Logo from '@/assets/logo.svg'
 import Link from 'next/link'
 
-export const Header = () => {
+const Header = () => {
   return (
     <div className={style.nav}>
       <div className={style.logo}>
@@ -31,3 +31,5 @@ export const Header = () => {
     </div>
   )
 }
+
+export default Header

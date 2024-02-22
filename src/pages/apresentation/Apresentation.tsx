@@ -7,7 +7,7 @@ import { FaLinkedin, FaGithub } from "react-icons/fa6"
 import Link from 'next/link'
 
 
-export const Apresentation = () => {
+const Apresentation = () => {
   return (
     <div className={ style.container }>
       <section className={ style.saltation_text }>
@@ -33,3 +33,5 @@ export const Apresentation = () => {
     </div>
   )
 }
+
+export default Apresentation

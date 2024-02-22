@@ -5,7 +5,7 @@ import Image from 'next/image'
 import Logo from '@/assets/logo.svg'
 import { techs } from './techs'
 
-export const MinhasTechs = () => {
+const MinhasTechs = () => {
   return (
 
     <div className={ style.container }>
@@ -38,3 +38,5 @@ export const MinhasTechs = () => {
     </div >
   )
 }
+
+export default MinhasTechs

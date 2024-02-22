@@ -5,7 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 
-export const Portifolio = () => {
+const Portifolio = () => {
   return (
     <div className={ style.container }>
       <section className={ style.header_portifolio }>
@@ -34,3 +34,5 @@ export const Portifolio = () => {
     </div>
   )
 }
+
+export default Portifolio
