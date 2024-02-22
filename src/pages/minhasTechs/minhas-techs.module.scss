@@ -39,6 +39,7 @@
     display: grid ;
     grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
     justify-content: center;
+    row-gap: 5rem;
 
       span {
         font-size: 2rem;

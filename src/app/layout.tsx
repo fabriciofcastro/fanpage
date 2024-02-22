@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.scss";
-import { Header } from "@/componets/header/Header";
-import { Main } from "@/componets/Main";
+import { Header } from "@/pages/header/Header";
+import { Main } from "@/components/Main";
+import { Provider } from "react-redux"
 
-const poppins = Poppins({ 
-  subsets: ['latin'], 
-  weight: ['400', '600']});
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['400', '600']
+});
 
 export const metadata: Metadata = {
   title: "Fabrício Castro",
@@ -20,13 +22,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={poppins.className}>
-      <Main >
-        <Header/>
-        {children}
-      </Main>
-        
-        </body>
+      <body className={ poppins.className }>
+        <Main >
+          <Header />
+          { children }
+        </Main>
+      </body>
     </html>
   );
 }

@@ -1,6 +1,6 @@
 'use client'
 
-import  style  from '@/componets/main.module.css'
+import  style  from '@/components/main.module.scss'
 
 interface ChildrenProps {
   children: React.ReactNode

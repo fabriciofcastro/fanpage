@@ -1,12 +1,14 @@
-import { Main } from '@/componets/Main'
-import { Apresentation } from '@/componets/apresentation/Apresentation';
-import { MinhasTechs } from '@/componets/minhasTechs/Minhas-techs';
+import { Main } from '@/components/Main'
+import { Apresentation } from '@/pages/apresentation/Apresentation';
+import { MinhasTechs } from '@/pages/minhasTechs/Minhas-techs';
+import { Portifolio } from '@/pages/portifolio/Portifolio';
 
 export default function Home() {
   return (
     <Main >
       <Apresentation />
       <MinhasTechs />
+      <Portifolio />
     </Main>
   );
 }

@@ -1,6 +1,6 @@
 'use client'
 
-import style from '@/componets/header/header.module.scss'
+import style from '@/pages/header/header.module.scss'
 import Image from 'next/image'
 import Logo from '@/assets/logo.svg'
 import Link from 'next/link'
