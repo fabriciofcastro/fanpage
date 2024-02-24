@@ -3,7 +3,7 @@
 import style from '@/pages/minhasTechs/minhasTechs.module.scss'
 import Image from 'next/image'
 import Logo from '@/assets/logo.svg'
-import {Techs} from './techs'
+import {techs} from './techs'
 
 const MyTechs = () => {
   return (
@@ -29,7 +29,7 @@ const MyTechs = () => {
     
       <section className={ style.techs }>
         {
-          Techs.map((tech, index) => {
+          techs.map((tech, index) => {
             return (
               <div className={ style.contentTechs } key={ index } >
                 <span className={style.title_stacks}>{ tech.tech }</span>

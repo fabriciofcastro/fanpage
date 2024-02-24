@@ -12,7 +12,7 @@ interface TechsProps {
   image: StaticImageData
 }
 
-export const Techs: TechsProps[] = [
+export const techs: TechsProps[] = [
   {
     tech: 'HTML',
     image: nivel_4,
@@ -45,19 +45,19 @@ export const Techs: TechsProps[] = [
   },
   {
     tech: 'GITHUB',
-    image: nivel_3
+    image: nivel_3,
   },
   {
     tech: 'GIT',
-    image: nivel_3
+    image: nivel_3,
   },
   {
     tech: 'typescript',
-    image: nivel_2
+    image: nivel_2,
   },
   {
     tech: 'JAVA',
-    image: nivel_1
+    image: nivel_1,
   },
   {
     tech: 'Redux Toolkit',

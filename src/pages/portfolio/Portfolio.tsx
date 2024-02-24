@@ -1,6 +1,6 @@
 
 import style from '@/pages/portfolio/portfolio.module.scss'
-import itemsPortfolio from './items_portfolio'
+import { itemsPortfolio } from './itemsPortfolio'
 import Image from 'next/image'
 import Link from 'next/link'
 

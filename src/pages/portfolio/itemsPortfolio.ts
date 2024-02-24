@@ -8,41 +8,39 @@ interface itemsPortfolioProps {
   url: string
 }
 
-const ItemsPortfolio: itemsPortfolioProps[] = [
+ export const itemsPortfolio: itemsPortfolioProps[] = [
   {
     category: 'web',
     title: 'Transportadora',
     image: imgTransportadora,
-    url: ''
+    url: '',
   },
   {   
     category: 'web',
     title: 'Transportadora',
     image: imgTransportadora,
-    url: ''
+    url: '',
   },
   {
     category: 'web',
     title: 'Transportadora',
     image: imgTransportadora,
-    url: ''
+    url: '',
   },
   {
     category: 'web',
     title: 'Transportadora',
     image: imgTransportadora,
-    url: ''
+    url: '',
   },{
     category: 'web',
     title: 'Transportadora',
     image: imgTransportadora,
-    url: ''
+    url: '',
   },{
     category: 'web',
     title: 'Transportadora',
     image: imgTransportadora,
-    url: ''
+    url: '',
   },
 ]
-
-export default ItemsPortfolio
