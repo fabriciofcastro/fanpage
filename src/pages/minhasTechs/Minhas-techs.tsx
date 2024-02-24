@@ -11,10 +11,14 @@ const MyTechs = () => {
     <div className={ style.container }>
 
       <section className={ style.header_skills }>
-        <div className={ style.logo }>
+        <div className={ style.skills_logo }>
           <Image src={ Logo } alt='Logo poligno' />
           <h1 className={ style.hardSkill }>
-            <span className={ style.skill }>Hard </span>Skill
+            <span className={ style.hard }>
+              Hard 
+            </span>
+              Skill
+           
           </h1>
         </div>
         <p>

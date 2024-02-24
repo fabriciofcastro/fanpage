@@ -2,6 +2,9 @@
 
   .header_portfolio {
     display: flex;
+    align-items: flex-end;
+    column-gap: 9rem;
+    margin-bottom: 2rem;
 
     .title {
 
@@ -15,10 +18,12 @@
         color: var(--secondary-color-text);
       }
 
-      .text_portfolio {
+    }
 
-      }
-
+    .descricao_portifolio span{
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: 2.5rem;
     }
 
   }
@@ -26,18 +31,25 @@
   .grid_portfolio {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
-    
     justify-content: center;
     gap: 2rem;
     flex-wrap: wrap;
-    border: 1px solid;
-    
-    .box_project {
-      border: 1px solid;
 
-        h1 {
-        
-        }
+    .box_project {
+      position: relative;
+      border-radius: .7rem;
+
+      h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -8rem;
+        margin-top: -2rem;
+        padding: 1rem 2rem;
+        background-color: rgba(0, 0, 0, .5);
+        border-radius: .5rem;
+        color: #fff;
+      }
     }
 
     .image {

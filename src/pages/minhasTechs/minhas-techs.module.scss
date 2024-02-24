@@ -1,58 +1,46 @@
 .container {
-  padding: 50px 0;
-
-  h1 {
-    font-size: 4rem;
-    font-weight: 600;
-    
-     .sobrenome, .skill {
-        color: var(--secondary-color-text);
-     }
-  }
 
   .header_skills {
     display: flex;
-    flex-direction: column;
+    flex-flow: column;
     align-items: center;
-    justify-content: center;
-    padding: 0 0 50px 0;
-  }
+    row-gap: 2rem;
 
-  .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 20px;
-    
-  }
 
-  .hardSkill {
-    padding: 40px 0;
-  }
+    .skills_logo {
+      display: flex;
+      align-items: center;
+      column-gap: 2rem;
+    }
 
-  p {
-    font-size: 2rem;
-    font-weight: 600;
+    .hardSkill {
+      font-size: 4rem;
+      font-weight: 600;
+
+        .hard {
+          color: var(--secondary-color-text);
+          margin-right: 2rem;
+        }
+    }
+
+    p {
+      font-size: 2rem;
+      font-weight: 550;
+    }
   }
 
   .techs {
-    display: grid ;
-    grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
-    justify-content: center;
-    row-gap: 5rem;
-
-      span {
-        font-size: 2rem;
-        font-weight: 700;
-      }
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  
+    .contentTechs {
+      display: flex;
+      flex-flow: column;
+     align-items: center;
+      padding: 2rem;
+      border: 2px solid;
+    }
   }
 
-  .contentTechs {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-    row-gap: 2rem;
-  }
+
 }
-
