@@ -8,7 +8,7 @@ interface itemsPortfolioProps {
   url: string
 }
 
- export const itemsPortfolio: itemsPortfolioProps[] = [
+ const itemsPortfolio: itemsPortfolioProps[] = [
   {
     category: 'web',
     title: 'Transportadora',
@@ -44,3 +44,5 @@ interface itemsPortfolioProps {
     url: '',
   },
 ]
+
+export default itemsPortfolio

@@ -3,7 +3,7 @@
 import style from '@/pages/minhasTechs/minhasTechs.module.scss'
 import Image from 'next/image'
 import Logo from '@/assets/logo.svg'
-import {techs} from './techs'
+import techs from '../../components/items/techs'
 
 const MyTechs = () => {
   return (
