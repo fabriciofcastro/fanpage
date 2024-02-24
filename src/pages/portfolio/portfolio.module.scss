@@ -1,0 +1,49 @@
+.container {
+
+  .header_portfolio {
+    display: flex;
+
+    .title {
+
+
+      span {
+        font-size: 5rem;
+        font-weight: 600;
+      }
+
+      .text_my {
+        color: var(--secondary-color-text);
+      }
+
+      .text_portfolio {
+
+      }
+
+    }
+
+  }
+
+  .grid_portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    border: 1px solid;
+    
+    .box_project {
+      border: 1px solid;
+
+        h1 {
+        
+        }
+    }
+
+    .image {
+      width: 100%;
+      height: 20rem;
+    }
+
+  }
+}

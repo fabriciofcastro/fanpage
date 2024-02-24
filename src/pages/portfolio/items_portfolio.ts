@@ -1,21 +1,21 @@
-import imgTransportadora from '@/assets/portifolio/web.webp'
+import imgTransportadora from '@/assets/portfolio/web.webp'
 import { StaticImageData } from 'next/image'
 
-interface itemsPortifolioProps {
+interface itemsPortfolioProps {
   title: string
   category: string
   image: StaticImageData
   url: string
 }
 
-export const itemsPortifolio: itemsPortifolioProps[] = [
+const ItemsPortfolio: itemsPortfolioProps[] = [
   {
     category: 'web',
     title: 'Transportadora',
     image: imgTransportadora,
     url: ''
   },
-  {
+  {   
     category: 'web',
     title: 'Transportadora',
     image: imgTransportadora,
@@ -44,3 +44,5 @@ export const itemsPortifolio: itemsPortifolioProps[] = [
     url: ''
   },
 ]
+
+export default ItemsPortfolio

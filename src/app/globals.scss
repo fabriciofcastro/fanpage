@@ -33,7 +33,6 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 1.6rem;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -44,6 +43,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	font-size: 1.6rem;
 }
 
 a {

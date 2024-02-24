@@ -3,9 +3,9 @@
 import style from '@/pages/minhasTechs/minhas-techs.module.scss'
 import Image from 'next/image'
 import Logo from '@/assets/logo.svg'
-import { techs } from './techs'
+import techs from './techs'
 
-const MinhasTechs = () => {
+const MyTechs = () => {
   return (
 
     <div className={ style.container }>
@@ -22,7 +22,7 @@ const MinhasTechs = () => {
         </p>
 
       </section>
-
+    
       <section className={ style.techs }>
         {
           techs.map((tech, index) => {
@@ -32,11 +32,11 @@ const MinhasTechs = () => {
                 <Image src={ tech.image } alt='Imagens que ilustra nível de competência de hard skill' />
               </div>
             )
-          })
-        }
+          }) 
+        } 
       </section>
     </div >
   )
 }
 
-export default MinhasTechs
+export default MyTechs
