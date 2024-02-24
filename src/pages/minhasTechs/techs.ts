@@ -12,7 +12,7 @@ interface TechsProps {
   image: StaticImageData
 }
 
-const Techs: TechsProps[] = [
+export const Techs: TechsProps[] = [
   {
     tech: 'HTML',
     image: nivel_4,
@@ -69,4 +69,3 @@ const Techs: TechsProps[] = [
   },
 ]
 
-export default Techs

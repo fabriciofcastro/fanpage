@@ -1,9 +1,9 @@
 'use client'
 
-import style from '@/pages/minhasTechs/minhas-techs.module.scss'
+import style from '@/pages/minhasTechs/minhasTechs.module.scss'
 import Image from 'next/image'
 import Logo from '@/assets/logo.svg'
-import techs from './techs'
+import {Techs} from './techs'
 
 const MyTechs = () => {
   return (
@@ -29,10 +29,10 @@ const MyTechs = () => {
     
       <section className={ style.techs }>
         {
-          techs.map((tech, index) => {
+          Techs.map((tech, index) => {
             return (
               <div className={ style.contentTechs } key={ index } >
-                <span>{ tech.tech }</span>
+                <span className={style.title_stacks}>{ tech.tech }</span>
                 <Image src={ tech.image } alt='Imagens que ilustra nível de competência de hard skill' />
               </div>
             )

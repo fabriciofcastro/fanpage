@@ -31,14 +31,22 @@
 
   .techs {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr));
+    padding: 4rem 0;
+
   
     .contentTechs {
       display: flex;
       flex-flow: column;
-     align-items: center;
-      padding: 2rem;
-      border: 2px solid;
+      align-items: center;
+      row-gap: 2rem;
+      padding: 2rem 0;
+    }
+
+    .title_stacks {
+      font-size: 2rem;
+      font-weight: 600;
+
     }
   }
 
