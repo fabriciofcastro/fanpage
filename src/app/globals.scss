@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+	scroll-behavior: smooth;
+	outline: none;
 }
 
 :root {
@@ -65,4 +67,10 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+@media (max-width: 1200px){
+	html {
+		font-size: 55%;
+	}
 }

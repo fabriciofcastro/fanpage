@@ -1,5 +1,6 @@
 'use client'
 
+import { IoIosMenu } from "react-icons/io";
 import style from '@/pages/header/header.module.scss'
 import Image from 'next/image'
 import Logo from '@/assets/logo.svg'
@@ -12,13 +13,15 @@ const Header = () => {
         <Image className={style.logo_image} src={Logo} alt='LOGO POLIGNO' />
         <span>Fabrício Castro</span>
       </div>
+      <IoIosMenu className={style.menu_responsive}/>
       <nav>
+      
         <ul className={style.nav_ul}>
           <li>
-            <Link className={style.Link} href='#'>HOME</Link>
+            <Link className={style.Link} href='/'>HOME</Link>
           </li>
           <li>
-            <Link className={style.Link} href='#'>SOBRE</Link>
+            <Link className={style.Link} href='/about'>SOBRE</Link>
           </li>
           <li>
             <Link className={style.Link} href='#'>PORTIFOLIO</Link>

@@ -1,0 +1,39 @@
+.about {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  gap: 2rem;
+
+  .about_img {
+    
+    .image {
+      max-width: 35vw;
+      min-width: 30rem;
+      height: 40rem;
+    }
+    
+  }
+
+  .about_content {
+
+    .heading{
+      font-size: 3.5rem;
+      font-weight: 600;
+
+      span {
+        color: var(--secondary-color-text);
+      }
+    }
+
+    h3 {
+      font-size: 2.5rem;
+      font-weight: 550;
+      line-height: 4rem;
+    }
+
+    p {
+      line-height: 2.2rem;
+      margin: 2rem 0 3rem;
+    }
+  }
+}

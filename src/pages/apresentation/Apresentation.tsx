@@ -17,17 +17,17 @@ const Apresentation = () => {
           <h1>FRONT-END</h1>
           <h5>Seja bem-vindo ao meu website</h5>
         </div>
-        <button className={ style.button } type='button'>
+        <Link href="#" className={ style.button } type='button'>
           Saiba mais sobre mim
-        </button>
+        </Link>
 
         <section className={ style.social }>
-          <Link href='#'> <FaLinkedin /></Link>
-          <Link href='#'> <FaGithub /></Link>
+          <Link className={style.social_icon} href='https://www.linkedin.com/in/fabriciofcastro/' target='_blank'> <FaLinkedin /></Link>
+          <Link className={style.social_icon} href='https://github.com/fabriciofcastro' target='_blank'> <FaGithub /></Link>
         </section>
       </section>
       <section className={ style.foto }>
-        <Image src={ Foto } alt='Imagem do desenvolvedor' width={620} className={style.image_dev} />
+        <Image src={ Foto } alt='Imagem do desenvolvedor' className={style.image_dev} />
       </section>
 
     </div>
