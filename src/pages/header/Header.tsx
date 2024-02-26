@@ -8,30 +8,35 @@ import Link from 'next/link'
 
 const Header = () => {
   return (
-    <div className={style.nav}>
-      <div className={style.logo}>
-        <Image className={style.logo_image} src={Logo} alt='LOGO POLIGNO' />
-        <span>Fabrício Castro</span>
+    <header className={ style.header }>
+      <div className={ style.logo }>
+        <Link href="/" >
+          <Image className={ style.logo_image } src={ Logo } alt='LOGO POLIGNO' />
+        </Link>
+        <Link href="/" >
+          <span>Fabrício Castro</span>
+        </Link>
+
       </div>
-      <IoIosMenu className={style.menu_responsive}/>
-      <nav>
-      
-        <ul className={style.nav_ul}>
+      <IoIosMenu className={ style.menu_responsive } />
+      <nav className={style.tag_nav}>
+
+        <ul className={ style.nav_ul }>
           <li>
-            <Link className={style.Link} href='/'>HOME</Link>
+            <Link className={ style.Link } href='/'>HOME</Link>
           </li>
           <li>
-            <Link className={style.Link} href='/about'>SOBRE</Link>
+            <Link className={ style.Link } href='/about'>SOBRE</Link>
           </li>
           <li>
-            <Link className={style.Link} href='#'>PORTIFOLIO</Link>
+            <Link className={ style.Link } href='#'>PORTIFOLIO</Link>
           </li>
           <li>
-            <Link className={style.Link} href='#'>CONTATO</Link>
+            <Link className={ style.Link } href='#'>CONTATO</Link>
           </li>
         </ul>
       </nav>
-    </div>
+    </header>
   )
 }
 

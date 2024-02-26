@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 const Portfolio = () => {
   return (
-    <div className={ style.container }>
+    <section className={ style.container }>
       <section className={ style.header_portfolio }>
         <section className={ style.title }>
           <span className={ style.text_my }>Meu</span><br />
@@ -18,21 +18,27 @@ const Portfolio = () => {
         </section>
       </section>
 
-      <section className={ style.grid_portfolio }>
+      <section className={ style.portfolio_container }>
         {
           itemsPortfolio.map((item, index) => {
             return (
-              <section key={ index } className={style.box_project}>
-                <Link href={ item.url } >
-                  <Image src={ item.image } alt='' className={ style.image } />
-                  <h1>{ item.title }</h1>
-                </Link>
+              <section key={ index } className={ style.portfolio_box }>
+
+                <Image src={ item.image } alt='' className={ style.image } />
+
+
+                <div className={ style.portfolio_layer }>
+                  <Link href={ item.url } >
+                    <h1>{ item.title }</h1>
+                  </Link>
+                </div>
+
               </section>
             )
           })
         }
       </section>
-    </div>
+    </section>
   )
 }
 

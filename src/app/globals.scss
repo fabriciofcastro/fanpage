@@ -37,6 +37,7 @@ time, mark, audio, video {
 	border: 0;
 	font: inherit;
 	vertical-align: baseline;
+	color: var(--primary-color-text);
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -46,6 +47,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 	font-size: 1.6rem;
+	
 }
 
 a {

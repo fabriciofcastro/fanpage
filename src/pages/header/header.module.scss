@@ -1,9 +1,9 @@
 .container {
-  min-width: 100vh;
+  width: 100vw;
 
 }
 
-.nav {
+.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -54,6 +54,12 @@
     visibility: visible;
     display: block;
   }
+
+  .tag_nav {
+    display: none;
+    visibility: collapse;
+  }
+
 }
 
 

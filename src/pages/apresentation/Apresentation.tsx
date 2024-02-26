@@ -17,7 +17,7 @@ const Apresentation = () => {
           <h1>FRONT-END</h1>
           <h5>Seja bem-vindo ao meu website</h5>
         </div>
-        <Link href="#" className={ style.button } type='button'>
+        <Link href="/about" className={ style.button } type='button'>
           Saiba mais sobre mim
         </Link>
 
