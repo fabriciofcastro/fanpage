@@ -1,6 +1,6 @@
 import style from './contact.module.scss'
 
-export const Contact = () => {
+const Contact = () => {
   return (
     <section className={ style.contact }>
       <h2>Contato</h2>
