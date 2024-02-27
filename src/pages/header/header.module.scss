@@ -1,14 +1,10 @@
-.container {
-  width: 100vw;
-
-}
-
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 10rem;
   
+
   .Link {
     font-size: 1.5rem;
     font-weight: 550;
@@ -32,7 +28,7 @@
 }
 
 .logo_image {
-  width: 4rem ;
+  width: 4rem;
   height: 4rem;
 }
 
@@ -44,22 +40,28 @@
 .menu_responsive {
   font-size: 3rem;
   cursor: pointer;
-  visibility:collapse;
+  visibility: collapse;
   display: none;
 }
 
 
-@media all and (max-width: 992px) {
+@media all and (max-width: 768px) {
   .menu_responsive {
-    visibility: visible;
     display: block;
   }
 
   .tag_nav {
-    display: none;
-    visibility: collapse;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 1rem 3%;
+    background-color: #fff;
+
+    .nav_ul {
+      display: block;
+      font-size: 2rem;
+      margin: 3rem;
+    }
+
   }
-
 }
-
-

@@ -1,16 +1,17 @@
 import Link from 'next/link'
 import style from './footer.module.scss'
 import { FaArrowUp } from "react-icons/fa";
+import { FaCode } from "react-icons/fa";
 
 const Footer = () => {
 
   const date = new Date()
 
   return (
-    <footer className={ style.footer }>
+    <footer className={ style.footer } >
       <section className={ style.footer_text }>
         <p>
-          Copyright &copy; { date.getFullYear() } | Todos os direitos resenvados
+          Dev  <FaCode /> { date.getFullYear() } | Todos os direitos resenvados
         </p>
       </section>
       <section className={ style.iconTop }>

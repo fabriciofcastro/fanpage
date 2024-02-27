@@ -3,6 +3,7 @@
 import style from '@/pages/apresentation/apresentation.module.scss'
 import Foto from '@/assets/Home_art 1.svg'
 import Image from 'next/image'
+import { MdDownload } from "react-icons/md";
 import { FaLinkedin, FaGithub } from "react-icons/fa6"
 import Link from 'next/link'
 
@@ -17,9 +18,21 @@ const Apresentation = () => {
           <h1>FRONT-END</h1>
           <h5>Seja bem-vindo ao meu website</h5>
         </div>
-        <Link href="/about" className={ style.button } type='button'>
+        
+        <section className={style.down_btn}>
+          
+          <section className={style.down_cv}>
+            <span>Download CV</span>
+            <MdDownload />
+          </section>
+
+          <Link href="/about" className={ style.button } type='button'>
           Saiba mais sobre mim
         </Link>
+        </section>
+        
+
+        
 
         <section className={ style.social }>
           <Link className={style.social_icon} href='https://www.linkedin.com/in/fabriciofcastro/' target='_blank'> <FaLinkedin /></Link>

@@ -1,8 +1,6 @@
 .container {
   display: flex;
-  gap: 3rem;
-  padding: 5rem 1rem;
-
+  padding: 2rem 1rem;
 
   .saltation_text {
 
@@ -22,20 +20,52 @@
     }
 
     .button {
-      margin-top: 15rem;
-      display: inline-block;
       padding: 1.3rem 2.8rem;
       background-color: var(--secondary-color-text);
       border-radius: 3rem;
+      width: max-content;
       box-shadow: 0 0 1rem var(--primary-color-text);
       color: #fff;
       letter-spacing: .1rem;
-      font-size: 600;
+      font-size: 1.6rem;
       transition: .5s ease;
+      font-weight: 500;
 
       &:hover {
         box-shadow: none;
       }
+    }
+
+    .down_btn {
+      display: flex;
+      column-gap: 2rem;
+      margin-top: 9rem;
+      flex-wrap: wrap;
+      gap: 2rem;
+
+      .down_cv {
+        display: flex;
+        align-items: center;
+        width: max-content;
+        padding: .5rem 3rem;
+        border-top: 2px solid;
+        border-left: 1px solid;
+        border-right: 1px solid;
+        border-bottom: 1px solid;
+        cursor: pointer;
+        transition: .5s ease;
+        font-weight: 500;
+        column-gap: 2rem;
+
+        &:hover {
+          box-shadow: 0 0 1rem rgba(0, 0, 0, .6) ;
+        }
+
+        & svg {
+          font-size: 2.3rem;
+        }
+      }
+
     }
 
     .social {
@@ -51,7 +81,7 @@
 
 
         &:hover {
-          color: #011b5e;
+          color: rgb(1, 73, 255)
         }
       }
 
@@ -60,21 +90,12 @@
   }
 
   .foto {
- 
+
 
     .image_dev {
-      width: 50vw;
+      width: 100%;
+      min-width: 50%
     }
   }
 
-}
-
-@media (max-width: 992px) {
-  .container {
-    
-  }
-
-  @media all and (max-width: 992px) {
-    
-  }
 }
