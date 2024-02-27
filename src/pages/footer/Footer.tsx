@@ -2,7 +2,7 @@ import Link from 'next/link'
 import style from './footer.module.scss'
 import { FaArrowUp } from "react-icons/fa";
 
-export const Footer = () => {
+const Footer = () => {
 
   const date = new Date()
 
@@ -22,3 +22,5 @@ export const Footer = () => {
     </footer>
   )
 }
+
+export default Footer

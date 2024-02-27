@@ -3,7 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.scss";
 import Header from "@/pages/header/Header";
 import Main from "@/components/Main";
-import { Footer } from "@/pages/footer/Footer";
+import Footer from "@/pages/footer/Footer";
 
 
 const poppins = Poppins({
