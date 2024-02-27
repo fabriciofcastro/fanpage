@@ -1,0 +1,52 @@
+.contact {
+ 
+  h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .form {
+    width: 70rem;
+    margin: 2rem auto ;
+    text-align: center;
+
+    & .input-box {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+  }
+
+  label {
+    position: absolute;
+    top:-10px;
+    left: 0;
+    font-size: .1px;
+    visibility: collapse;
+  }
+
+  & .form .input_box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 1.5rem;
+    color: rgb(0, 62, 101);
+    font-size: 1.6rem;
+    border-radius: .8rem;
+    margin: .7rem 0;
+  }
+
+  input {
+    width: 49%;
+  }
+
+  textarea {
+    resize: none;
+  }
+}

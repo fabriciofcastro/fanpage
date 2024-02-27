@@ -41,7 +41,7 @@ const techs: TechsProps[] = [
 
   {
     tech: 'styled-components',
-    image: nivel_3
+    image: nivel_2
   },
   {
     tech: 'GITHUB',
@@ -61,12 +61,17 @@ const techs: TechsProps[] = [
   },
   {
     tech: 'Redux Toolkit',
-    image: nivel_2
+    image: nivel_1
   },
   {
     tech: 'Tailwind',
+    image: nivel_1
+  },
+  {
+    tech: 'Sass',
     image: nivel_2
   },
+  
 ]
 
 export default techs
