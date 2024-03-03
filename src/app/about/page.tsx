@@ -16,7 +16,7 @@ const Page = () => {
       </section>
 
       <section className={ style.about_content }>
-        <h2 className={ style.heading }> SOBRE <span>EU</span>  </h2>
+        <h2 className={ style.heading }> SOBRE <span>MIN</span>  </h2>
         <h3>Front-end developer </h3>
         <p>
           Atualmente estou em fase de transição de carreira. Busco uma oportunidade na área de desenvolvimento, especificamente como front-end para colocar em prática meus conhecimentos, aprender e contribuir junto a vossa empresa. Estou extremamente motivado e apaixonado pela área!
