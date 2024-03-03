@@ -1,0 +1,120 @@
+.container {
+
+  padding: 0 9%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  background-color: var(--primary-color-text);
+  color: #fff;
+}
+
+.saltation_text {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  gap: 5rem;
+  padding: 10rem 0;
+}
+
+
+.text h5 {
+  font-size: 2.5rem;
+  margin-bottom: .5rem;
+}
+
+.text h1 {
+  font-size: 4rem;
+  font-weight: 600;
+
+}
+
+.text p {
+  font-size: 1.8rem;
+  margin-top: .5rem;
+}
+
+
+.down_btn {
+  display: flex;
+  column-gap: 2rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.down_cv {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  padding: .5rem 3rem;
+  border-top: 2px solid;
+  border-left: 1px solid;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  cursor: pointer;
+  transition: .5s ease;
+  font-weight: 500;
+  column-gap: 2rem;
+  transition: .5s ease;
+}
+
+.down_cv:hover {
+  box-shadow: 0 0 1rem rgba(0, 0, 0, .6);
+  background-color: var(--secondary-color-text);
+  color: #ffffff;
+}
+
+.down_cv svg {
+  font-size: 2.5rem;
+}
+
+.button {
+  padding: 1.3rem 2.8rem;
+  background-color: var(--secondary-color-text);
+  width: max-content;
+  box-shadow: 0 0 3rem var(--primary-color-text);
+  color: #fff;
+  letter-spacing: .1rem;
+  font-size: 1.6rem;
+  transition: .5s ease;
+  font-weight: 500;
+  border-top: 2px solid transparent;
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+
+.button:hover {
+  box-shadow: none;
+  background-color: transparent;
+  border-bottom: 1px solid var(--secondary-color-text);
+  border-top: 2px solid var(--secondary-color-text);
+  border-left: 1px solid var(--secondary-color-text);
+  border-right: 1px solid var(--secondary-color-text);
+}
+
+.social {
+  display: flex;
+  column-gap: 6rem;
+}
+
+.social svg {
+  font-size: 4rem;
+  color: #fff;
+  transition: .5s ease;
+}
+
+.social svg:hover {
+  color: var(--secondary-color-text);
+}
+
+.foto {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+}
+
+.image_dev {
+  width: 40rem;
+  height: 50rem;
+
+}

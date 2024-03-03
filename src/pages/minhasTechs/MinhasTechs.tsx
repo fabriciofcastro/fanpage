@@ -1,6 +1,6 @@
 'use client'
 
-import style from '@/pages/minhasTechs/minhasTechs.module.scss'
+import style from '@/pages/minhasTechs/minhasTechs.module.css'
 import Image from 'next/image'
 import Logo from '@/assets/logo.svg'
 import techs from '../../components/items/techs'

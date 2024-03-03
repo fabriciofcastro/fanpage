@@ -1,6 +1,6 @@
-.contact {
+
  
-  h2 {
+  .contact h2 {
     font-size: 3rem;
     font-weight: 600;
     text-align: center;
@@ -10,13 +10,13 @@
     width: 70rem;
     margin: 2rem auto ;
     text-align: center;
-
-    & .input-box {
+  }
+    .form .input-box {
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;
     }
-  }
+  
 
   label {
     position: absolute;
@@ -26,7 +26,7 @@
     visibility: collapse;
   }
 
-  & .form .input_box {
+  .contact .form .input_box {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -49,4 +49,3 @@
   textarea {
     resize: none;
   }
-}

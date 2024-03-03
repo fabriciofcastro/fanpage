@@ -1,5 +1,5 @@
 
-import style from '@/pages/portfolio/portfolio.module.scss'
+import style from '@/pages/portfolio/portfolio.module.css'
 import itemsPortfolio from '../../components/items/itemsPortfolio'
 import Image from 'next/image'
 import Link from 'next/link'

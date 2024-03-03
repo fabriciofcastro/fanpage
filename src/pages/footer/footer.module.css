@@ -1,0 +1,36 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 5rem 9%;
+  row-gap: 2rem;
+  height: 13rem;
+  column-gap: 2rem;
+}
+
+.iconTop {
+  display: flex;
+  color: var(--secondary-color-text);
+  background-color: var(--secondary-color-text);
+  width: 5rem;
+  height: 5rem;
+  border-radius: 1rem;
+  transition: .5s ease;
+}
+
+.iconTop:hover {
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 1.0);
+}
+
+.ir_top {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ir_top svg {
+  color: #fff;
+}

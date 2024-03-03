@@ -1,0 +1,80 @@
+.container {
+  padding: 0 9%;
+}
+
+.header_portfolio {
+  display: flex;
+  align-items: flex-end;
+  column-gap: 9rem;
+  row-gap: 2rem;
+  margin-bottom: 2rem;
+  flex-flow: wrap;
+}
+
+.title {}
+
+.title span {
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+.text_my {
+  color: var(--secondary-color-text);
+}
+
+.descricao_portifolio span {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+
+}
+
+.portfolio_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
+  gap: 2.5rem;
+  padding: 2rem 0;
+}
+
+.portfolio_box {
+  position: relative;
+  border-radius: 2rem;
+  overflow: hidden;
+  border: 2px solid;
+}
+
+.portfolio_box .image {
+  width: 100%;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.portfolio_box:hover .image {
+  transform: scale(1.1);
+}
+
+.portfolio_box .portfolio_layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, .5), rgba(255, 255, 255, .5));
+  transition: .5s ease;
+  transform: translateY(100%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+}
+
+.portfolio_layer h1{
+  color: var(--secondary-color-text);
+}
+
+
+
+.portfolio_box:hover .portfolio_layer {
+  transform: translateY(0);
+}

@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import style from './footer.module.scss'
+import style from './footer.module.css'
 import { FaArrowUp } from "react-icons/fa";
 import { FaCode } from "react-icons/fa";
 

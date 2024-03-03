@@ -2,7 +2,7 @@
 
 import { IoIosMenu } from "react-icons/io";
 import { MdClose } from "react-icons/md";
-import style from '@/pages/header/header.module.scss'
+import style from '@/pages/header/header.module.css'
 import Image from 'next/image'
 import Logo from '@/assets/logo.svg'
 import Link from 'next/link'
@@ -24,16 +24,16 @@ const Header = () => {
         <Link href="/" >
           <Image className={ style.logo_image } src={ Logo } alt='LOGO POLIGNO' />
         </Link>
-        <Link href="/" >
-          <span>Fabrício Castro</span>
+        <Link href="/" className={style.texto_logo} >
+          Fabrício Castro
         </Link>
 
       </div>
-      <IoIosMenu className={ style.menu_responsive } onClick={() => menuResponviso }/>
+      <IoIosMenu className={ style.menu_responsive }/>
      
       
-      <nav className={style.tag_nav}>
-      
+      <nav className={ style.tag_nav }>
+      <MdClose className={ style.menu_close} />
         <ul className={ style.nav_ul }>
           <li>
             <Link className={ style.Link } href='/'>HOME</Link>
