@@ -1,20 +1,26 @@
+.contact {
+  padding: 0 9%;
+}
+
 .contact h2 {
   font-size: 3rem;
   font-weight: 600;
   text-align: center;
+ 
 }
 
 .form {
-  width: 70rem;
+  max-width: 70rem;
   margin: 2rem auto;
-    text-align: center;
-  }
+  text-align: center;
+}
 
 .form .input-box {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
+
 
 .input_box label {
   position: absolute;
@@ -30,8 +36,8 @@
   flex-wrap: wrap;
 }
 
-input,
-textarea {
+.input_box input,
+.form textarea {
   width: 100%;
   padding: 1.5rem;
   color: rgb(0, 62, 101);
@@ -40,10 +46,48 @@ textarea {
   margin: .7rem 0;
 }
 
-input {
-  width: 49%;
+.input_box input {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 33rem;
+
 }
 
-textarea {
+.form label {
+  display: flex;
+  padding: 3rem 0 0;
+  justify-content: flex-start;
+  font-weight: 600;
+}
+
+.form textarea {
   resize: none;
+}
+
+.btn{
+  padding: 1.3rem 4rem;
+  background-color: var(--secondary-color-text);
+  width: max-content;
+  box-shadow: 0 0 3rem var(--primary-color-text);
+  color: #fff;
+  letter-spacing: .1rem;
+  font-size: 1.6rem;
+  transition: .5s ease;
+  font-weight: 500;
+  border-top: 2px solid transparent;
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  margin-top: 2rem;
+}
+
+.btn:hover {
+  box-shadow: none;
+  background-color: transparent;
+  border-bottom: 1px solid var(--secondary-color-text);
+  border-top: 2px solid var(--secondary-color-text);
+  border-left: 1px solid var(--secondary-color-text);
+  border-right: 1px solid var(--secondary-color-text);
+  color: var(--secondary-color-text);
+  cursor: pointer;
 }
