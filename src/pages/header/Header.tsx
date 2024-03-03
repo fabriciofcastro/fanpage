@@ -42,10 +42,10 @@ const Header = () => {
             <Link className={ style.Link } href='/about'>SOBRE</Link>
           </li>
           <li>
-            <Link className={ style.Link } href='#'>SKILLS</Link>
+            <Link className={ style.Link } href='/#skills'>SKILLS</Link>
           </li>
           <li>
-            <Link className={ style.Link } href='#'>PORTIFOLIO</Link>
+            <Link className={ style.Link } href='/#portfolio'>PORTIFOLIO</Link>
           </li>
 
           <li>

@@ -8,7 +8,7 @@ import techs from '../../components/items/techs'
 const MyTechs = () => {
   return (
 
-    <div className={ style.container }>
+    <div className={ style.container } id="skills">
 
       <section className={ style.header_skills }>
         <div className={ style.skills_logo }>

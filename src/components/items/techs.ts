@@ -27,11 +27,11 @@ const techs: TechsProps[] = [
 
   },
   {
-    tech: 'React',
+    tech: 'React.js',
     image: nivel_3,
   },
   {
-    tech: 'Next',
+    tech: 'Next.js',
     image: nivel_3,
   },
   {

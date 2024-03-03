@@ -1,5 +1,6 @@
 .container {
-  padding: 0 9%;
+  padding: 2rem 9%;
+  box-shadow: 0 0 1rem #0003;
 }
 
 .header_portfolio {

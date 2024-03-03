@@ -14,7 +14,7 @@ const Footer = () => {
           Dev  <FaCode /> { date.getFullYear() } | Todos os direitos resenvados
         </p>
       </section>
-      <section className={ style.iconTop }>
+      <section className={ style.iconTop } id="#top">
         <Link href="/" className={style.ir_top}>
           <FaArrowUp size={20}/>
         </Link>
