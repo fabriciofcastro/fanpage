@@ -29,6 +29,14 @@
   display: none;
 }
 
+.menu-fixed {
+  background-color: #000;
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  transition: .5s ease height; 
+}
+
 .nav_ul {
   display: flex;
   column-gap: 6rem;

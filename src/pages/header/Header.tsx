@@ -19,7 +19,7 @@ const Header = () => {
   }
 
   return (
-    <header className={ style.header }>
+    <header className={ `${style.header}` }>
       <div className={ style.logo }>
         <Link href="/" >
           <Image className={ style.logo_image } src={ Logo } alt='LOGO POLIGNO' />
@@ -33,7 +33,7 @@ const Header = () => {
      
       
       <nav className={ style.tag_nav }>
-      <MdClose className={ style.menu_close} />
+      <MdClose className={ style.menu_close } />
         <ul className={ style.nav_ul }>
           <li>
             <Link className={ style.Link } href='/'>HOME</Link>

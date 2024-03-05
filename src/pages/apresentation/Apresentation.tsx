@@ -15,9 +15,10 @@ const Apresentation = () => {
       <section className={ style.saltation_text }>
         <div className={ style.text }>
           <h5>Olá!</h5>
-          <h1>EU SOU <br />
-            DESENVOLVEDOR<br />
-            FRONT-END</h1>
+          <h1 data-text="EU SOU DESENVOLVEDOR" >EU SOU </h1>
+          <h1 data-text="DESENVOLVEDOR">DESENVOLVEDOR</h1>  
+          <h1 data-text="FRONT-END"> FRONT-END</h1> 
+          
           <p>Seja bem-vindo ao meu website</p>
         </div>
 
