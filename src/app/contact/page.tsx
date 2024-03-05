@@ -6,7 +6,8 @@ const Contact = () => {
       <h2>Contato</h2>
 
       <form action="https://formsubmit.co/fabriciofeitosacastro@gmail.com" method="POST" className={ style.form }>
-        <input type="hidden" name="_next" value="https://fabriciofeitosacastro/contact/enviadocomsucesso" />
+        <input type="hidden" name="_next" value="https://fabriciofeitosacastro/contact/sucesso" />
+        <input type="hidden" name="_autoresponse" value="Recebi sua menssagem em breve retornarei" />
         <div className={ style.input_box }>
           <label htmlFor="nome">Nome completo</label>
           <input type="text" name="nome" placeholder='Nome completo' id="nome" />
