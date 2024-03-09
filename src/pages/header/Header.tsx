@@ -18,9 +18,6 @@ const Header = () => {
     setIsMenu((menu) => !menu)
   }
 
-  console.log(isMenu);
-
-
   return (
     <header className={ `${style.header}` }>
       <div className={ style.logo }>

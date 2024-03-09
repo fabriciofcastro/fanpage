@@ -81,7 +81,7 @@
     left: 0;
     background-color: rgb(255, 255, 255);
     width: 100%;
-    padding: 2rem 5%;
+    padding: 2rem 3%;
     display: none; 
   }
 
@@ -94,6 +94,7 @@
 
   .nav_ul {
     display: flex;
+    flex-flow: column;
     row-gap: 3rem
   }
 
