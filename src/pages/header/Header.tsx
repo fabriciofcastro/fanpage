@@ -18,6 +18,9 @@ const Header = () => {
     setIsMenu((menu) => !menu)
   }
 
+  console.log(isMenu);
+
+
   return (
     <header className={ `${style.header}` }>
       <div className={ style.logo }>
@@ -29,11 +32,13 @@ const Header = () => {
         </Link>
 
       </div>
-      <IoIosMenu className={ style.menu_responsive }/>
-     
+
+      <IoIosMenu className={` ${style.menu_responsive} ${isMenu ? "" : style['display']} `}  onClick={ menuResponviso } />
       
-      <nav className={ style.tag_nav }>
-      <MdClose className={ style.menu_close } />
+      <nav className={ `${style.tag_nav} ${isMenu ? style['display'] : ""}` }>
+        
+        <MdClose className={ `${style.menu_close} ${isMenu ? style['display'] : ""}`} onClick={menuResponviso}  />
+       
         <ul className={ style.nav_ul }>
           <li>
             <Link className={ style.Link } href='/'>HOME</Link>
