@@ -30,7 +30,7 @@ const Apresentation = () => {
           </section>
 
           <Link href="/about" className={ style.button } type='button'>
-            Saiba mais sobre mim
+            Saiba mais 
           </Link>
         </section>
         <section className={ style.social }>

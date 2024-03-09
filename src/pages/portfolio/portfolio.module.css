@@ -11,9 +11,6 @@
   margin-bottom: 2rem;
   flex-flow: wrap;
 }
-
-.title {}
-
 .title span {
   font-size: 5rem;
   font-weight: 600;
@@ -78,4 +75,10 @@
 
 .portfolio_box:hover .portfolio_layer {
   transform: translateY(0);
+}
+
+@media (max-width: 992px) {
+  .container {
+    padding: 4rem 4%;
+  }
 }

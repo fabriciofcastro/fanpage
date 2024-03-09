@@ -102,9 +102,9 @@
 
 .down_btn {
   display: flex;
-  column-gap: 2rem;
-  flex-wrap: wrap;
   gap: 2rem;
+  flex-wrap: wrap;
+  
 }
 
 .down_cv {
@@ -134,7 +134,7 @@
 }
 
 .button {
-  padding: 1.3rem 2.8rem;
+  padding: 1.3rem 5.8rem;
   background-color: var(--secondary-color-text);
   width: max-content;
   box-shadow: 0 0 3rem var(--primary-color-text);
@@ -183,5 +183,41 @@
 .image_dev {
   width: 40rem;
   height: 50rem;
+
+}
+
+
+@media (max-width: 992px){
+  .container {
+    padding: 0 3%;
+  }
+
+  .text h5 {
+    font-size: 2rem;
+  }
+
+  .text h1 {
+    font-size: 3rem;
+  }
+
+  .down_btn {
+    align-items: center;
+    flex-flow: column;
+  }
+
+  .foto {
+    order: 1;
+    padding-top: 4rem;
+  }
+
+  .image_dev {
+    width: 25rem;
+    height: 32rem;
+  }
+
+  .saltation_text {
+    order: 2;
+    padding: 4rem 0;
+  }
 
 }
