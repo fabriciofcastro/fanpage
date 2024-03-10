@@ -12,7 +12,7 @@ const Page = () => {
     <section className={style.about} >
 
       <section className={ style.about_img }>
-        <Image src={ avatar } alt="Imagem do Fabrício desenvolvedor" className={style.image}/>
+        <Image src={ avatar } alt="Imagem do Fabrício desenvolvedor" className={style.image_dev}/>
       </section>
 
       <section className={ style.about_content }>

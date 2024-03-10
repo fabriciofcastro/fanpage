@@ -1,8 +1,7 @@
 .container {
-
   padding: 0 9%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(36rem, 1fr));
   background-color: var(--primary-color-text);
   color: #fff;
 }
@@ -200,24 +199,37 @@
     font-size: 3rem;
   }
 
-  .down_btn {
-    align-items: center;
-    flex-flow: column;
+
+  .saltation_text {
+    padding: 4rem 0;
+  }
+  
+  .image_dev {
+    width: 30rem;
+    height: 40rem;
+  }
+
+
+}
+
+@media (max-width: 768px) {
+
+  .container {
+    padding: 3rem 3%;
+  }
+
+  .saltation_text {
+    order: 2;
+   
   }
 
   .foto {
     order: 1;
-    padding-top: 4rem;
   }
 
   .image_dev {
     width: 25rem;
     height: 32rem;
-  }
-
-  .saltation_text {
-    order: 2;
-    padding: 4rem 0;
   }
 
 }

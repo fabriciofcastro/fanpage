@@ -1,19 +1,21 @@
 .about {
   padding: 5rem 9%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(37rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   column-gap: 10rem;
   row-gap: 2rem;
   flex-wrap: wrap;
 }
 
 .about_img {
-  min-width: 40rem;
+  display: flex;
+  justify-content: center;
+  border: 1px solid;
 }
 
-
-.about_content {
-  flex: 1;
+.image_dev {
+  width: 40rem;
+  height: 55rem;
 }
 
 .about_content .heading {
@@ -36,4 +38,27 @@
   font-size: 2rem;
   line-height: 2.5rem;
   margin: 2rem 0 3rem;
+}
+
+/* media 992px */
+
+@media (max-width: 992px) {
+  .about {
+    padding: 4rem 3%;
+  }
+}
+
+@media (max-width: 480px) {
+  .image_dev {
+    width: 30rem;
+    height: 45rem;
+  }
+
+}
+
+@media (max-width: 375px) {
+  .image_dev {
+    width: 25rem;
+    height: 35rem;
+  }
 }
