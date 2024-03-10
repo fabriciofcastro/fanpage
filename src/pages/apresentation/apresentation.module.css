@@ -111,21 +111,26 @@
   align-items: center;
   width: max-content;
   padding: .5rem 3rem;
-  border-top: 2px solid;
-  border-left: 1px solid;
-  border-right: 1px solid;
-  border-bottom: 1px solid;
+  border-top: 2px solid var(--secondary-color-text);
+  border-left: 1px solid var(--secondary-color-text);
+  border-right: 1px solid var(--secondary-color-text);
+  border-bottom: 1px solid var(--secondary-color-text);
   cursor: pointer;
   transition: .5s ease;
   font-weight: 500;
   column-gap: 2rem;
   transition: .5s ease;
+  color: #ffffff;
 }
 
 .down_cv:hover {
   box-shadow: 0 0 1rem rgba(0, 0, 0, .6);
   background-color: var(--secondary-color-text);
   color: #ffffff;
+  border-top: 2px solid #ffffff;
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
 }
 
 .down_cv svg {

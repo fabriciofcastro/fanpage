@@ -24,10 +24,10 @@ const Apresentation = () => {
 
         <section className={ style.down_btn }>
 
-          <section className={ style.down_cv }>
+          <Link href="/cv_fabricio.pdf" target="_blank" passHref className={ style.down_cv }>
             Download CV
             <MdDownload />
-          </section>
+          </Link>
 
           <Link href="/about" className={ style.button } type='button'>
             Saiba mais 
