@@ -31,15 +31,17 @@ const Header = () => {
       </div>
 
       <IoIosMenu className={` ${style.menu_responsive} ${isMenu ? "" : style['display']} `}  onClick={ menuResponviso } />
-      
+
+      <div className={ style.icontheme }>
+        <SunDim className={ style.iconlight } />
+        <Moon className={ style.icondark } color="white" />
+      </div>
+
       <nav className={ `${style.tag_nav} ${isMenu ? style['display'] : ""} `}>
         
         <MdClose className={ `${style.menu_close} ${isMenu ? style['display'] : ""} `} onClick={menuResponviso}  />
 
-        <div className={style.theme}>
-        <SunDim className={style.iconlight} size={32} />
-        <Moon className={style.icondark}  size={28} color="white" />
-        </div>
+
        
         <ul className={ style.nav_ul }>
           <li>

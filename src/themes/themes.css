@@ -1,3 +1,17 @@
 :root {
   
+
+  /*  --------------  Theme Dark  ------------------  */
+
+  /*  --------------  Theme Light  ------------------  */
+
+  --primary-color-text: #445964;
+	--secondary-color-text: #263138;
+  --primary-color-bg: #ffffff ;
+}
+
+.dark {
+  --primary-color-text: #445964;
+	--secondary-color-text: #263138;
+  --primary-color-bg: #00121d ;
 }

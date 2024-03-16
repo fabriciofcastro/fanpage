@@ -23,6 +23,14 @@
   color: var(--primary-color-text);
 }
 
+.menu_responsive {
+  cursor: pointer;
+}
+
+.menu_responsive:hover {
+  color: var(--secondary-color-text);
+}
+
 .menu_responsive,
 .menu_close {
   font-size: 3rem;
@@ -58,10 +66,15 @@
 
 /* -------------- Theme Light and Dark --------------------------*/
 
-.theme {
+.icontheme {
   position: absolute;
   right: 3rem;
-  top: 3.5rem;
+  top: 3.3rem;
+  z-index: 0;
+}
+.icondark,
+.iconlight {
+  font-size: 3rem;
 }
 
 .icondark {
@@ -93,10 +106,16 @@
     padding: 0;
   }
 
+  .icontheme {
+    right: 7rem;
+    top: 1.5rem;
+  }
+
   .tag_nav {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 99;
     background-color: rgb(255, 255, 255);
     width: 100%;
     padding: 2rem 3%;
@@ -108,6 +127,11 @@
     right: 0;
     top: 0;
     margin: 2% 2% 0;
+    cursor: pointer;
+  }
+
+  .menu_close:hover {
+    color: red;
   }
 
   .nav_ul {
