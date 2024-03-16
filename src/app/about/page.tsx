@@ -1,11 +1,13 @@
-'use client'
 
 import Image from 'next/image'
 import style from './about.module.css'
 import avatar from '@/assets/fabricio2.png'
+import { Metadata } from 'next'
 
-
-import React from 'react'
+export const metadata: Metadata = {
+ description: "descrição about",
+ title: "Sobre",
+}
 
 const Page = () => {
   return (

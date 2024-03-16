@@ -1,4 +1,10 @@
+import { Metadata } from 'next'
 import style from './contact.module.css'
+
+export const metadata: Metadata = {
+  title: "Contato",
+  description: "Deixe seu contato com uma breve descrição do assunto"
+}
 
 const Contact = () => {
   return (

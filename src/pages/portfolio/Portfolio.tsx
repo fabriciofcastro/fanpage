@@ -10,7 +10,7 @@ const Portfolio = () => {
       <section className={ style.header_portfolio }>
         <section className={ style.title }>
           <span className={ style.text_my }>Meu</span><br />
-          <span className={ style.text_portfolio }>Portifólio</span>
+          <span className={ style.text_portfolio }>Portfólio</span>
         </section>
         <section className={ style.descricao_portifolio }>
           <span>Estes são alguns dos trabalhos e</span>  <br />
@@ -33,7 +33,7 @@ const Portfolio = () => {
                   </Link>
                 </div>
 
-              </section>
+              </section> 
             )
           })
         }

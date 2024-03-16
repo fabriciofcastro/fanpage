@@ -1,4 +1,3 @@
-'use client'
 
 import style from '@/pages/apresentation/apresentation.module.css'
 import Foto from '@/assets/fabricio.png'
@@ -6,7 +5,7 @@ import Image from 'next/image'
 import { MdDownload } from "react-icons/md";
 import { FaLinkedin, FaGithub } from "react-icons/fa6"
 import Link from 'next/link'
-
+import { Metadata } from 'next';
 
 const Apresentation = () => {
   return (
@@ -16,7 +15,7 @@ const Apresentation = () => {
         <div className={ style.text }>
           <h5>Olá!</h5>
           <h1 data-text="EU SOU" >EU SOU </h1>
-          <h1 data-text="DESENVOLVEDOR">DESENVOLVEDOR</h1>  
+          <h1 data-yartext="DESENVOLVEDOR">DESENVOLVEDOR</h1>  
           <h1 data-text="FRONT-END"> FRONT-END</h1> 
           
           <p>Seja bem-vindo ao meu website</p>

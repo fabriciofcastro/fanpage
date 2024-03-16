@@ -56,6 +56,24 @@
   border-bottom: 3px solid;
 }
 
+/* -------------- Theme Light and Dark --------------------------*/
+
+.theme {
+  position: absolute;
+  right: 3rem;
+  top: 3.5rem;
+}
+
+.icondark {
+  display: none;
+}
+
+.iconlight {
+  cursor: pointer;
+}
+
+
+/*  ------------------ Reposivo ----------------------------------*/
 
 @media all and (max-width: 992px) {
   .header {
