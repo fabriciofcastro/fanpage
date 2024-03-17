@@ -47,9 +47,11 @@ const Header = () => {
       <IoIosMenu className={` ${style.menu_responsive} ${isMenu ? "" : style['display']} `}  onClick={ menuResponviso } />
 
       <div className={ style.icontheme }>
+
         <SunDim className={ `${style.iconlight} ${isLightDark ? style['hidden'] : style['visibility']}` } onClick={ dark } />
 
-        <Moon className={ `${style.icondark}  ${isLightDark ? style['visibility'] : style['hidden']}` } color="white" onClick={ light } />
+        <Moon   className={ `${style.icondark}  ${isLightDark ? style['visibility'] : style['hidden']}` } color="white" onClick={ light } />
+
       </div>
 
       <nav className={ `${style.tag_nav} ${isMenu ? style['display'] : ""} `}>
