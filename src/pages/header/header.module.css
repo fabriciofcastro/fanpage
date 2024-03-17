@@ -75,14 +75,15 @@
 .icondark,
 .iconlight {
   font-size: 3rem;
+  cursor: pointer;
 }
 
-.icondark {
+.hidden {
   display: none;
 }
 
-.iconlight {
-  cursor: pointer;
+.visibility {
+  display: block;
 }
 
 

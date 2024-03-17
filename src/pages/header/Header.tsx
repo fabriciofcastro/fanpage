@@ -8,14 +8,28 @@ import Logo from '@/assets/logo.svg'
 import Link from 'next/link'
 import { useState } from "react";
 import { Moon, SunDim } from "@phosphor-icons/react";
+import { useTheme } from "next-themes";
 
 
 const Header = () => {
 
+
+  const [isLightDark, setIsLightDark] = useState(() => false)
   const [isMenu, setIsMenu] = useState(() => false)
+  const { setTheme } = useTheme()
 
   function menuResponviso (): void {
     setIsMenu((menu) => !menu)
+  }
+
+  function light() {
+    setTheme("light")
+    setIsLightDark((isLightDark) => !isLightDark)
+  }
+
+  function dark() {
+    setTheme("dark")
+    setIsLightDark((isLightDark) => !isLightDark)
   }
 
   return (
@@ -33,8 +47,9 @@ const Header = () => {
       <IoIosMenu className={` ${style.menu_responsive} ${isMenu ? "" : style['display']} `}  onClick={ menuResponviso } />
 
       <div className={ style.icontheme }>
-        <SunDim className={ style.iconlight } />
-        <Moon className={ style.icondark } color="white" />
+        <SunDim className={ `${style.iconlight} ${isLightDark ? style['hidden'] : style['visibility']}` } onClick={ dark } />
+
+        <Moon className={ `${style.icondark}  ${isLightDark ? style['visibility'] : style['hidden']}` } color="white" onClick={ light } />
       </div>
 
       <nav className={ `${style.tag_nav} ${isMenu ? style['display'] : ""} `}>

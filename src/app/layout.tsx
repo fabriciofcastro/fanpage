@@ -4,6 +4,7 @@ import "./globals.css";
 import "../themes/themes.css"
 import Header from "@/pages/header/Header";
 import Footer from "@/pages/footer/Footer";
+import { ThemeProvider } from "@/providers/theme-provider";
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -27,11 +28,15 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body className={ poppins.className }>
-       
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+        >
           <Header />
           { children }
           <Footer />
-       
+        </ThemeProvider>
       </body>
     </html>
   );
