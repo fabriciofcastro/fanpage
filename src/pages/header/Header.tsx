@@ -7,7 +7,7 @@ import Image from 'next/image'
 import Logo from '@/assets/logo.svg'
 import Link from 'next/link'
 import { useState } from "react";
-import { Moon, SunDim } from "@phosphor-icons/react";
+import { MoonStars, SunDim } from "@phosphor-icons/react";
 import { useTheme } from "next-themes";
 
 
@@ -23,11 +23,13 @@ const Header = () => {
   }
 
   function light() {
-    setTheme("dark")
     setIsLightDark((isLightDark) => !isLightDark)
+    setTheme("dark")
+   
   }
 
   function dark() {
+    
     setTheme("light")
     setIsLightDark((isLightDark) => !isLightDark)
   }
@@ -50,7 +52,7 @@ const Header = () => {
 
         <SunDim className={ `${style.iconlight} ${isLightDark ? style['visibility'] : style['hidden'] }` } onClick={ dark } />
 
-        <Moon   className={ `${style.icondark}  ${isLightDark ? style['hidden'] : style['visibility']}` } onClick={ light } />
+        <MoonStars   className={ `${style.icondark}  ${isLightDark ? style['hidden'] : style['visibility']}` } onClick={ light } />
 
       </div>
 

@@ -18,8 +18,8 @@ var Header = function () {
         setIsMenu(function (menu) { return !menu; });
     }
     function light() {
-        setTheme("dark");
         setIsLightDark(function (isLightDark) { return !isLightDark; });
+        setTheme("dark");
     }
     function dark() {
         setTheme("light");
@@ -33,7 +33,7 @@ var Header = function () {
         React.createElement(io_1.IoIosMenu, { className: " " + header_module_css_1["default"].menu_responsive + " " + (isMenu ? "" : header_module_css_1["default"]['display']) + " ", onClick: menuResponviso }),
         React.createElement("div", { className: header_module_css_1["default"].icontheme },
             React.createElement(react_2.SunDim, { className: header_module_css_1["default"].iconlight + " " + (isLightDark ? header_module_css_1["default"]['visibility'] : header_module_css_1["default"]['hidden']), onClick: dark }),
-            React.createElement(react_2.Moon, { className: header_module_css_1["default"].icondark + "  " + (isLightDark ? header_module_css_1["default"]['hidden'] : header_module_css_1["default"]['visibility']), onClick: light })),
+            React.createElement(react_2.MoonStars, { className: header_module_css_1["default"].icondark + "  " + (isLightDark ? header_module_css_1["default"]['hidden'] : header_module_css_1["default"]['visibility']), onClick: light })),
         React.createElement("nav", { className: header_module_css_1["default"].tag_nav + " " + (isMenu ? header_module_css_1["default"]['display'] : "") + " " },
             React.createElement(md_1.MdClose, { className: header_module_css_1["default"].menu_close + " " + (isMenu ? header_module_css_1["default"]['display'] : "") + " ", onClick: menuResponviso }),
             React.createElement("ul", { className: header_module_css_1["default"].nav_ul },

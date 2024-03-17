@@ -53,7 +53,7 @@
 
 
 .nav_ul li .Link {
-  font-weight: 550;
+  font-weight: 600;
   color: var(--primary-color-text);
   padding: .3rem 0;
 
@@ -62,6 +62,7 @@
 .nav_ul li .Link:hover {
   color: var(--secondary-color-text);
   border-bottom: 3px solid;
+
 }
 
 /* -------------- Theme Light and Dark --------------------------*/
@@ -91,7 +92,7 @@
 
 @media all and (max-width: 992px) {
   .header {
-    background-color: aquamarine;
+   
     position: relative;
     height: 6rem;
     display: flex;
@@ -126,9 +127,10 @@
   .menu_close {
     position: absolute;
     right: 0;
-    top: 0;
+    top: 1.3rem;
     margin: 2% 2% 0;
     cursor: pointer;
+    color: #000;
   }
 
   .menu_close:hover {
@@ -141,8 +143,23 @@
     row-gap: 3rem
   }
 
-  .display {
+
+  .nav_ul li .Link {
+    width: 95%;
+    padding: 1.3rem 2rem;
+    cursor: pointer;
     display: block;
+    transition: .3s ease;
+  }
+
+  .nav_ul li .Link:hover {
+    background-color: var(--primary-color-text);
+    border-bottom: none;
+    color: #fff;
+  }
+
+  .display {
+    display: block; 
   }
 
 }

@@ -23,9 +23,10 @@
 
 .hardSkill {
   font-size: 4rem;
+  font-weight: 600;
 }
 
-.hardSkill span {
+.hardSkill .hard {
   margin-right: 1rem;
   color: var(--secondary-color-text);
 }
@@ -45,11 +46,12 @@
   row-gap: 2rem;
 }
 
-.contentTechs span {
+.contentTechs .title_stacks {
   font-size: 2rem;
   font-weight: 600;
-
 }
+
+/*  -=-=-=-=-=-= Media Query -=-=-=-=-=-=-=-= */
 
 @media (max-width: 992px) {
   .container {

@@ -15,7 +15,7 @@
   text-align: center;
 }
 
-.form .input-box {
+.form .input_box {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -25,10 +25,10 @@
 .input_box label {
   position: absolute;
   top: -10px;
-    left: 0;
-    font-size: .1px;
-    visibility: collapse;
-  }
+  left: 0;
+  font-size: .1px;
+  visibility: collapse;
+}
 
 .contact .form .input_box {
   display: flex;
@@ -50,7 +50,7 @@
   display: flex;
   flex-wrap: wrap;
   max-width: 33rem;
-
+  border: var(--primary-color-text);
 }
 
 .form label {

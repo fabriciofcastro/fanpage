@@ -3,7 +3,6 @@ exports.__esModule = true;
 exports.metadata = void 0;
 var google_1 = require("next/font/google");
 require("./globals.css");
-require("../themes/themes.css");
 var Header_1 = require("@/pages/header/Header");
 var Footer_1 = require("@/pages/footer/Footer");
 var theme_provider_1 = require("@/providers/theme-provider");
