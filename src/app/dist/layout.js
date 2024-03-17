@@ -22,7 +22,7 @@ function RootLayout(_a) {
     var children = _a.children;
     return (React.createElement("html", { lang: "pt-br" },
         React.createElement("body", { className: poppins.className },
-            React.createElement(theme_provider_1.ThemeProvider, { attribute: "class", defaultTheme: "system", enableSystem: true },
+            React.createElement(theme_provider_1.ThemeProvider, { attribute: "class", defaultTheme: "system" },
                 React.createElement(Header_1["default"], null),
                 children,
                 React.createElement(Footer_1["default"], null)))));

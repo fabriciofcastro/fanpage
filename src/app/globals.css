@@ -14,9 +14,6 @@
 :root {
 	font-family: 'Poppins', sans-serif;
 	font-size: clamp(40%, 1% + 2vw,  62.5%);
-	color: var(--primary-color-text);
-
-	/* Variáveis de cores */
 
 }
 

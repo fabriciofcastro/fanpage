@@ -23,12 +23,12 @@ const Header = () => {
   }
 
   function light() {
-    setTheme("light")
+    setTheme("dark")
     setIsLightDark((isLightDark) => !isLightDark)
   }
 
   function dark() {
-    setTheme("dark")
+    setTheme("light")
     setIsLightDark((isLightDark) => !isLightDark)
   }
 
@@ -48,9 +48,9 @@ const Header = () => {
 
       <div className={ style.icontheme }>
 
-        <SunDim className={ `${style.iconlight} ${isLightDark ? style['hidden'] : style['visibility']}` } onClick={ dark } />
+        <SunDim className={ `${style.iconlight} ${isLightDark ? style['visibility'] : style['hidden'] }` } onClick={ dark } />
 
-        <Moon   className={ `${style.icondark}  ${isLightDark ? style['visibility'] : style['hidden']}` } color="white" onClick={ light } />
+        <Moon   className={ `${style.icondark}  ${isLightDark ? style['hidden'] : style['visibility']}` } onClick={ light } />
 
       </div>
 
