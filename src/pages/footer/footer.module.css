@@ -2,11 +2,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
   padding: 5rem 9%;
-  row-gap: 2rem;
-  height: 13rem;
-  column-gap: 2rem;
+  gap: 2rem;
+}
+
+.footer_text {
+  display: flex;
+  gap: 1rem;
 }
 
 .iconTop {

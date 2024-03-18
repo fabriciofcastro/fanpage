@@ -21,7 +21,7 @@ const Page = () => {
         <h2 className={ style.heading }> SOBRE <span>MIN</span>  </h2>
         <h3>Front-end developer </h3>
         <p>
-          Sou um entusiasta apaixonado pelo mundo do desenvolvimento front-end. Desde que entrei em contato com a magia da criação de interfaces digitais, tenho buscado incansavelmente aprimorar minhas habilidades e conhecimentos nesta área emocionante além proporcionar conhecimentos paralelos.
+          Sou um entusiasta apaixonado pelo mundo do desenvolvimento front-end. Desde que entrei em contato com a magia da criação de interfaces digitais, tenho buscado incansavelmente aprimorar minhas habilidades e conhecimentos nesta área  emocionante além proporcionar conhecimentos paralelos.
           </p>
           <p>
           Minha jornada começou com um fascínio pelo design e pela interatividade dos sites que eu visitava, o que me levou a explorar o universo do desenvolvimento web. Desde então, mergulhei de cabeça em aprender as linguagens fundamentais, como HTML, CSS e JavaScript, Reactjs, Nextjs absorvendo tudo o que podia por meio de cursos online, projetos pessoais e experiências práticas.

@@ -14,7 +14,7 @@ import { useTheme } from "next-themes";
 const Header = () => {
 
 
-  const [isLightDark, setIsLightDark] = useState(() => false)
+  const [isLightDark, setIsLightDark] = useState(() => true)
   const [isMenu, setIsMenu] = useState(() => false)
   const { setTheme } = useTheme()
 
@@ -22,23 +22,18 @@ const Header = () => {
     setIsMenu((menu) => !menu)
   }
 
-  function light() {
-    setIsLightDark((isLightDark) => !isLightDark)
-    setTheme("dark")
-   
+  function lightDark() {
+    isLightDark ? setTheme("light") : setTheme("dark")
+    setIsLightDark((isLightDark) => !isLightDark) 
   }
 
-  function dark() {
-    
-    setTheme("light")
-    setIsLightDark((isLightDark) => !isLightDark)
-  }
+
 
   return (
     <header className={ `${style.header}` }>
       <div className={ style.logo }>
         <Link href="/" > 
-          <Image className={ style.logo_image } src={ Logo } alt='LOGO POLIGNO' />
+          <Image className={ style.logo_image } src={ Logo } alt='Logo Hexágono' />
         </Link>
         <Link href="/" className={style.texto_logo} >
           Fabrício Castro
@@ -50,9 +45,9 @@ const Header = () => {
 
       <div className={ style.icontheme }>
 
-        <SunDim className={ `${style.iconlight} ${isLightDark ? style['visibility'] : style['hidden'] }` } onClick={ dark } />
+        <SunDim className={ `${style.iconlight} ${isLightDark ? style['visibility'] : style['hidden']}` } onClick={ lightDark } />
 
-        <MoonStars   className={ `${style.icondark}  ${isLightDark ? style['hidden'] : style['visibility']}` } onClick={ light } />
+        <MoonStars className={ `${style.icondark}  ${isLightDark ? style['hidden'] : style['visibility']}` } onClick={ lightDark } />
 
       </div>
 
@@ -73,7 +68,7 @@ const Header = () => {
             <Link className={ style.Link } href='/#skills'>SKILLS</Link>
           </li>
           <li>
-            <Link className={ style.Link } href='/#portfolio'>PORTIFOLIO</Link>
+            <Link className={ style.Link } href='/#portfolio'>PORTFÓLIO</Link>
           </li>
 
           <li>

@@ -30,6 +30,27 @@
   visibility: collapse;
 }
 
+.form .input_box input {
+  border-top: 0.2rem solid;
+  border-left: .1rem solid;
+  border-right: .1rem solid;
+  border-bottom: .2rem solid;
+}
+
+.form .input_box input:hover {
+  border-top: 0.2rem solid #0059ff;
+    border-left: .1rem solid #0059ff;
+    border-right: .1rem solid #0059ff;
+    border-bottom: .2rem solid #0059ff;
+}
+
+.form .input_box input:focus {
+  border-top: 0.2rem solid #0059ff;
+    border-left: .1rem solid #0059ff;
+    border-right: .1rem solid #0059ff;
+    border-bottom: .2rem solid #0059ff;
+}
+
 .contact .form .input_box {
   display: flex;
   justify-content: space-between;
@@ -62,27 +83,28 @@
 
 .form textarea {
   resize: none;
+  border-top: 0.2rem solid;
+    border-left: .1rem solid;
+    border-right: .1rem solid;
+    border-bottom: .2rem solid;
+  }
+  
+  .form textarea:hover {
+    border-top: 0.2rem solid #0059ff;
+    border-left: .1rem solid #0059ff;
+    border-right: .1rem solid #0059ff;
+    border-bottom: .2rem solid #0059ff;
+  }
+  
+  .form textarea:focus {
+    border-top: 0.2rem solid #0059ff;
+    border-left: .1rem solid #0059ff;
+    border-right: .1rem solid #0059ff;
+    border-bottom: .2rem solid #0059ff;
 }
 
 .btn{
   padding: 1.3rem 4rem;
-  background-color: var(--secondary-color-text);
-  width: max-content;
-  box-shadow: 0 0 3rem var(--primary-color-text);
-  color: #fff;
-  letter-spacing: .1rem;
-  font-size: 1.6rem;
-  transition: .5s ease;
-  font-weight: 500;
-  border-top: 2px solid transparent;
-  border-right: 1px solid transparent;
-  border-left: 1px solid transparent;
-  border-bottom: 1px solid transparent;
-  margin-top: 2rem;
-}
-
-.btn:hover {
-  box-shadow: none;
   background-color: transparent;
   border-bottom: 1px solid var(--secondary-color-text);
   border-top: 2px solid var(--secondary-color-text);
@@ -90,4 +112,18 @@
   border-right: 1px solid var(--secondary-color-text);
   color: var(--secondary-color-text);
   cursor: pointer;
+  font-weight: 600;
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    letter-spacing: .1rem;
+    transition: .5s ease;
+  }
+  
+  .btn:hover {
+    background-color: var(--secondary-color-text);
+    color: #fff;
+    border-top: 0.2rem solid #0059ff;
+    border-left: .1rem solid #0059ff;
+    border-right: .1rem solid #0059ff;
+    border-bottom: .2rem solid #0059ff;
 }

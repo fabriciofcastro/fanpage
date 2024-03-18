@@ -12,6 +12,7 @@ const Contact = () => {
       <h2>Contato</h2> 
 
       <form method="POST" action="https://formsubmit.co/fabriciofeitosacastro@gmail.com" className={ style.form }>
+        
         <input type="hidden" name="_next" value="https://www.fabriciofcastro.com.br/contact/sucesso" />
         <input type="hidden" name="_autoresponse" value="Recebi sua menssagem em breve retornarei" />
         <div className={ style.input_box }>
@@ -34,7 +35,7 @@ const Contact = () => {
       </form>
     </section>
   )
-}
+} 
 
 export default Contact
 
