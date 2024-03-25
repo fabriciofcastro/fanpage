@@ -18,45 +18,46 @@ const Header = () => {
   const [isMenu, setIsMenu] = useState(() => false)
   const { setTheme } = useTheme()
 
-  function menuResponviso (): void {
+  function menuResponviso(): void {
     setIsMenu((menu) => !menu)
   }
 
   function lightDark() {
     isLightDark ? setTheme("light") : setTheme("dark")
-    setIsLightDark((isLightDark) => !isLightDark) 
+    setIsLightDark((isLightDark) => !isLightDark)
   }
 
 
 
   return (
-    <header className={ `${style.header}` }>
+    <header className={ `${style.header} ${isLightDark ? style['header_bg'] : '' }` }>
       <div className={ style.logo }>
-        <Link href="/" > 
+        <Link href="/" >
           <Image className={ style.logo_image } src={ Logo } alt='Logo Hexágono' />
         </Link>
-        <Link href="/" className={style.texto_logo} >
+        <Link href="/" className={ style.texto_logo } >
           Fabrício Castro
         </Link>
 
       </div>
 
-      <IoIosMenu className={` ${style.menu_responsive} ${isMenu ? "" : style['display']} `}  onClick={ menuResponviso } />
+      <IoIosMenu className={ ` ${style.menu_responsive} ${isMenu ? "" : style['display']} ` } onClick={ menuResponviso } />
 
       <div className={ style.icontheme }>
 
-        <SunDim className={ `${style.iconlight} ${isLightDark ? style['visibility'] : style['hidden']}` } onClick={ lightDark } />
+        <section className={ style.select_theme }>
+          <SunDim className={ `${style.iconlight} ${isLightDark ? style['visibility'] : style['hidden']}` } onClick={ lightDark } />
 
-        <MoonStars className={ `${style.icondark}  ${isLightDark ? style['hidden'] : style['visibility']}` } onClick={ lightDark } />
-
+          <MoonStars className={ `${style.icondark}  ${isLightDark ? style['hidden'] : style['visibility']}` } onClick={ lightDark } />
+        </section>
       </div>
 
-      <nav className={ `${style.tag_nav} ${isMenu ? style['display'] : ""} `}>
-        
-        <MdClose className={ `${style.menu_close} ${isMenu ? style['display'] : ""} `} onClick={menuResponviso}  />
+      <nav className={ `${style.tag_nav} ${isMenu ? style['display'] : ""} ` }>
+
+        <MdClose className={ `${style.menu_close} ${isMenu ? style['display'] : ""} ` } onClick={ menuResponviso } />
 
 
-       
+
         <ul className={ style.nav_ul }>
           <li>
             <Link className={ style.Link } href='/'>HOME</Link>

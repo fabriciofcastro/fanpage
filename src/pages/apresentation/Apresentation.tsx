@@ -15,7 +15,7 @@ const Apresentation = () => {
         <div className={ style.text }>
           <h5>Olá!</h5>
           <h1 data-text="EU SOU" >EU SOU </h1>
-          <h1 data-yartext="DESENVOLVEDOR">DESENVOLVEDOR</h1>  
+          <h1 data-text="DESENVOLVEDOR">DESENVOLVEDOR</h1>  
           <h1 data-text="FRONT-END"> FRONT-END</h1> 
           
           <p>Seja bem-vindo ao meu website</p>

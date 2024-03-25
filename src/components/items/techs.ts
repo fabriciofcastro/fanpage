@@ -71,7 +71,18 @@ const techs: TechsProps[] = [
     tech: 'Sass',
     image: nivel_2
   },
-  
+  {
+    tech: 'SQL SERVER',
+    image: nivel_1
+  },
+  {
+    tech: 'Linux',
+    image: nivel_2
+  },
+  {
+    tech: 'Terminal',
+    image: nivel_2
+  },
 ]
 
 export default techs
