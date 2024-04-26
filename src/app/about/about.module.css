@@ -10,16 +10,46 @@
 
 .about_img {
   display: flex;
-  justify-content: center;
-  border-radius: 1rem;
+  align-items: center;
+  flex-flow: column;
+  border-radius: 10px;
   height: min-content;
-  box-shadow: 0 0 2.5rem rgba(92, 92, 92, 0.467);
+  
+}
+
+.container_image{
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(#1f465c, #082633);
+  width: 100%;
+  overflow: hidden;
+  border: .3rem solid #568fae;
+  border-radius: 10px;
 }
 
 .image_dev {
   width: 40rem;
   height: 50rem;
+}
 
+.icon_social {
+  display: flex;
+  padding: 3rem;
+  gap: 3rem;
+}
+
+.icon_social svg {
+  font-size: 5rem;
+  color: #568fae;
+  border: 2px solid #568fae;
+  border-radius: 1rem;
+  cursor: pointer;
+ transition: 500ms ease;
+}
+
+.icon_social svg:hover {
+  color: #051824; 
+  border: 2px solid #051824;
 }
 
 .about_content .heading {

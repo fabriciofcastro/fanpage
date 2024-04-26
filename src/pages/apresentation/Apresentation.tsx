@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { MdDownload } from "react-icons/md";
 import { FaLinkedin, FaGithub } from "react-icons/fa6"
 import Link from 'next/link'
-import { Metadata } from 'next';
+
 
 const Apresentation = () => {
   return (

@@ -30,7 +30,7 @@
 
 .portfolio_container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   gap: 2.5rem;
   padding: 2rem 0;
 }

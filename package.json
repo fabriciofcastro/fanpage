@@ -11,7 +11,7 @@
     "test:watch": "jest --watch"
   },
   "dependencies": {
-    "@phosphor-icons/react": "^2.0.15",
+    "@phosphor-icons/react": "^2.1.5",
     "@reduxjs/toolkit": "^2.1.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",

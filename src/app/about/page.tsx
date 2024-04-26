@@ -3,6 +3,8 @@ import Image from 'next/image'
 import style from './about.module.css'
 import avatar from '@/assets/fabricio2.png'
 import { Metadata } from 'next'
+import { GithubLogo, LinkedinLogo, MicrosoftOutlookLogo, WhatsappLogo } from '@phosphor-icons/react/dist/ssr'
+
 
 export const metadata: Metadata = {
  description: "descrição about",
@@ -14,7 +16,19 @@ const Page = () => {
     <section className={style.about} >
 
       <section className={ style.about_img }>
-        <Image src={ avatar } alt="Imagem do Fabrício desenvolvedor" className={style.image_dev}/>
+        
+        <div className={style.container_image}>
+          <Image src={ avatar } alt="Imagem do Fabrício desenvolvedor" className={style.image_dev}/>
+        </div>
+        
+
+          <div className={style.icon_social}>
+          <GithubLogo />
+           <LinkedinLogo />
+           <MicrosoftOutlookLogo />
+           <WhatsappLogo />
+          </div>
+        
       </section>
 
       <section className={ style.about_content }>
