@@ -16,8 +16,8 @@
   height: 57.735px;
   background:#445964;
   position: absolute;
-  top: 4rem;
-  left: 1rem;
+  top: 8rem;
+  left: 2rem;
   z-index: -1;
 }
 
@@ -51,7 +51,7 @@
   background:#445964;
   position: absolute;
   top: 40rem;
-  right: 1rem;
+  right: 8rem;
   z-index: -1;
 }
 
@@ -59,7 +59,7 @@
   content: "";
   position: absolute;
   top: -28.8675px;
-  left: 0;
+  left: 0rem;
   width: 0;
   height: 0;
   border-left: 50px solid transparent;
@@ -103,14 +103,13 @@
   border-left: .1rem solid;
   border-right: .1rem solid;
   border-bottom: .2rem solid;
-  width: 100%;
 }
 
 .form .input_box input:hover {
-  border-top: 0.2rem solid #0059ff;
-  border-left: .1rem solid #0059ff;
-  border-right: .1rem solid #0059ff;
-  border-bottom: .2rem solid #0059ff;
+  border-top: 0.2rem solid #445964;
+  border-left: .1rem solid #445964;
+  border-right: .1rem solid #445964;
+  border-bottom: .2rem solid #445964;
 }
 
 .form .input_box input:focus {
@@ -124,7 +123,7 @@
 .form textarea {
   width: 100%;
   padding: 1.5rem;
-  color: rgb(0, 62, 101);
+  color: #003e65;
   font-size: 1.6rem;
   border-radius: .8rem;
   margin: .7rem 0;
@@ -152,10 +151,10 @@
 }
 
 .form textarea:hover {
-  border-top: 0.2rem solid #0059ff;
-  border-left: .1rem solid #0059ff;
-  border-right: .1rem solid #0059ff;
-  border-bottom: .2rem solid #0059ff;
+  border-top: 0.2rem solid #445964;
+  border-left: .1rem solid #445964;
+  border-right: .1rem solid #445964;
+  border-bottom: .2rem solid #445964;
 }
 
 .form textarea:focus {
