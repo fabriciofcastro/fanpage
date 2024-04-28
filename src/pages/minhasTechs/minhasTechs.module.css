@@ -31,6 +31,16 @@
   color: var(--secondary-color-text);
 }
 
+.skills_logo_title {
+  display: flex;
+  align-items: center;  
+  gap: 1rem;
+}
+
+.logo_svg{
+  width: 5rem;
+}
+
 .techs {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));

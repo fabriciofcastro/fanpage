@@ -6,6 +6,7 @@
   row-gap: 2rem;
   flex-wrap: wrap;
   margin-top: 7rem;
+  
 }
 
 .about_img {
@@ -14,22 +15,53 @@
   flex-flow: column;
   border-radius: 10px;
   height: min-content;
-  
+  position: relative;
+  position: relative;
+  overflow: hidden;
+}
+
+.about::before {
+  content: "";
+  width: 40rem;
+  height: 40rem;
+  border-radius: 200%;
+  background-color: rgb(14, 120, 146);
+  position: absolute;
+  top: -10rem;
+  right: -15rem;
+  clip-path: circle(55%);
+  z-index: -1;
 }
 
 .container_image{
   display: flex;
   justify-content: center;
-  background: linear-gradient(#1f465c, #082633);
+  background: linear-gradient(#122029, #01070a);
   width: 100%;
   overflow: hidden;
   border: .3rem solid #568fae;
   border-radius: 10px;
+  position: relative;
+}
+
+.container_image::before {
+  content: "";
+  width: 60rem;
+  height: 60rem;
+  border-radius: 200%;
+  background-color: rgb(14, 120, 146);
+  position: absolute;
+  top: -25rem;
+  left: -25rem;
+  clip-path: circle(55%);
+  z-index: 1;
 }
 
 .image_dev {
   width: 40rem;
   height: 50rem;
+  position: sticky;
+  z-index: 1;
 }
 
 .icon_social {
@@ -40,27 +72,25 @@
 
 .icon_social svg {
   font-size: 5rem;
-  color: #568fae;
-  border: 2px solid #568fae;
+  color: #175b80;
+  border: 2px solid #175b80;
   border-radius: 1rem;
   cursor: pointer;
  transition: 500ms ease;
 }
 
 .icon_social svg:hover {
-  color: #051824; 
-  border: 2px solid #051824;
+  color: #00eeff; 
+  border: 2px solid #00eeff;
 }
 
 .about_content .heading {
   font-size: 3.5rem;
   font-weight: 600;
-}
-
+} 
 .about span {
   color: var(--secondary-color-text);
 }
-
 
 .about h3 {
   font-size: 2.5rem;

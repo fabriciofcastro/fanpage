@@ -12,13 +12,13 @@ const MyTechs = () => {
 
       <section className={ style.header_skills }>
         <div className={ style.skills_logo }>
-          <Image src={ Logo } alt='Logo poligno' />
+          <Image src={ Logo } alt='Logo hexagono' />
           <h1 className={ style.hardSkill }>
             <span className={ style.hard }>
-              Hard 
+              Hard
             </span>
-              Skill
-           
+            Skill
+
           </h1>
         </div>
         <p>
@@ -26,18 +26,24 @@ const MyTechs = () => {
         </p>
 
       </section>
-    
+
       <section className={ style.techs }>
         {
           techs.map((tech, index) => {
             return (
               <div className={ style.contentTechs } key={ index } >
-                <span className={style.title_stacks}>{ tech.tech }</span>
+                <div className={ style.skills_logo_title }>
+                  <Image src={ tech.IconStack } alt="" className={style.logo_svg} />
+                  <span className={ style.title_stacks }>  { tech.tech }</span>
+
+                </div>
+
+
                 <Image src={ tech.image } alt='Imagens que ilustra nível de competência de hard skill' />
               </div>
             )
-          }) 
-        } 
+          })
+        }
       </section>
     </div >
   )

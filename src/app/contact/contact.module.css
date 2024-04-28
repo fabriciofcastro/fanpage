@@ -1,15 +1,83 @@
 .contact {
   padding: 5rem 9%;
- margin-top: 7rem;
+  margin-top: 7rem;
+  position: relative;
+  overflow: hidden;
 }
 
 .contact h2 {
   font-size: 3rem;
   font-weight: 600;
   text-align: center;
- 
 }
 
+.pentagon  {
+  width: 100px;
+  height: 57.735px;
+  background:#445964;
+  position: absolute;
+  top: 4rem;
+  left: 1rem;
+  z-index: -1;
+}
+
+.pentagon::before {
+  content: "";
+  position: absolute;
+  top: -28.8675px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 28.8675px solid #445964;
+}
+
+.pentagon::after {
+  content: "";
+  position: absolute;
+  bottom: -28.8675px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 28.8675px solid #445964;
+}
+
+.pentagon2  {
+  width: 100px;
+  height: 57.735px;
+  background:#445964;
+  position: absolute;
+  top: 40rem;
+  right: 1rem;
+  z-index: -1;
+}
+
+.pentagon2::before {
+  content: "";
+  position: absolute;
+  top: -28.8675px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 28.8675px solid #445964;
+}
+
+.pentagon2::after {
+  content: "";
+  position: absolute;
+  bottom: -28.8675px;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 28.8675px solid #445964;
+}
 .form {
   max-width: 70rem;
   margin: 2rem auto;
@@ -18,10 +86,9 @@
 
 .form .input_box {
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
+  gap: 2rem;
 }
-
 
 .input_box label {
   position: absolute;
@@ -36,26 +103,21 @@
   border-left: .1rem solid;
   border-right: .1rem solid;
   border-bottom: .2rem solid;
+  width: 100%;
 }
 
 .form .input_box input:hover {
   border-top: 0.2rem solid #0059ff;
-    border-left: .1rem solid #0059ff;
-    border-right: .1rem solid #0059ff;
-    border-bottom: .2rem solid #0059ff;
+  border-left: .1rem solid #0059ff;
+  border-right: .1rem solid #0059ff;
+  border-bottom: .2rem solid #0059ff;
 }
 
 .form .input_box input:focus {
   border-top: 0.2rem solid #0059ff;
-    border-left: .1rem solid #0059ff;
-    border-right: .1rem solid #0059ff;
-    border-bottom: .2rem solid #0059ff;
-}
-
-.contact .form .input_box {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  border-left: .1rem solid #0059ff;
+  border-right: .1rem solid #0059ff;
+  border-bottom: .2rem solid #0059ff;
 }
 
 .input_box input,
@@ -71,7 +133,6 @@
 .input_box input {
   display: flex;
   flex-wrap: wrap;
-  max-width: 33rem;
   border: var(--primary-color-text);
 }
 
@@ -85,26 +146,26 @@
 .form textarea {
   resize: none;
   border-top: 0.2rem solid;
-    border-left: .1rem solid;
-    border-right: .1rem solid;
-    border-bottom: .2rem solid;
-  }
-  
-  .form textarea:hover {
-    border-top: 0.2rem solid #0059ff;
-    border-left: .1rem solid #0059ff;
-    border-right: .1rem solid #0059ff;
-    border-bottom: .2rem solid #0059ff;
-  }
-  
-  .form textarea:focus {
-    border-top: 0.2rem solid #0059ff;
-    border-left: .1rem solid #0059ff;
-    border-right: .1rem solid #0059ff;
-    border-bottom: .2rem solid #0059ff;
+  border-left: .1rem solid;
+  border-right: .1rem solid;
+  border-bottom: .2rem solid;
 }
 
-.btn{
+.form textarea:hover {
+  border-top: 0.2rem solid #0059ff;
+  border-left: .1rem solid #0059ff;
+  border-right: .1rem solid #0059ff;
+  border-bottom: .2rem solid #0059ff;
+}
+
+.form textarea:focus {
+  border-top: 0.2rem solid #0059ff;
+  border-left: .1rem solid #0059ff;
+  border-right: .1rem solid #0059ff;
+  border-bottom: .2rem solid #0059ff;
+}
+
+.btn {
   padding: 1.3rem 4rem;
   background-color: transparent;
   border-bottom: 1px solid var(--secondary-color-text);
@@ -114,17 +175,17 @@
   color: var(--secondary-color-text);
   cursor: pointer;
   font-weight: 600;
-    margin-top: 2rem;
-    font-size: 1.6rem;
-    letter-spacing: .1rem;
-    transition: .5s ease;
-  }
-  
-  .btn:hover {
-    background-color: var(--secondary-color-text);
-    color: #fff;
-    border-top: 0.2rem solid #0059ff;
-    border-left: .1rem solid #0059ff;
-    border-right: .1rem solid #0059ff;
-    border-bottom: .2rem solid #0059ff;
+  margin-top: 2rem;
+  font-size: 1.6rem;
+  letter-spacing: .1rem;
+  transition: .5s ease;
+}
+
+.btn:hover {
+  background-color: var(--secondary-color-text);
+  color: #fff;
+  border-top: 0.2rem solid #0059ff;
+  border-left: .1rem solid #0059ff;
+  border-right: .1rem solid #0059ff;
+  border-bottom: .2rem solid #0059ff;
 }

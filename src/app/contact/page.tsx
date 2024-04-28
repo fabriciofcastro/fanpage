@@ -11,6 +11,9 @@ const Contact = () => {
     <section className={ style.contact }>
       <h2>Contato</h2> 
 
+      <div className={style.pentagon}></div>
+      <div className={style.pentagon2}></div>
+
       <form method="POST" action="https://formsubmit.co/fabriciofeitosacastro@gmail.com" className={ style.form }>
         
         <input type="hidden" name="_next" value="https://www.fabriciofcastro.com.br/contact/sucesso" />
