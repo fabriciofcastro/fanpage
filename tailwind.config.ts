@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss"
+const { fontFamily } = require("tailwindcss/defaultTheme")
 
 const config = {
   darkMode: ["class"],
@@ -10,6 +11,9 @@ const config = {
 	],
   prefix: "",
   theme: {
+    gridAutoColumns: {
+      'auto-fit': 'minmax(36rem, 1fr)',
+    },
     container: {
       center: true,
       padding: "2rem",
@@ -18,7 +22,41 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ["var(--font-sans)", ...fontFamily.sans],
+      },
+      backgroundImage: {
+        bgAvatar: "url:(../../assets/image/bg-img.svg )"
+      },
       colors: {
+        "blueDark": {
+          A1: '#004df2',
+          A2: '#1166fb',
+          A3: '#0077ff',
+          A4: '#0075ff',
+          A5: '#0081fd',
+          A6: '#0f89fd',
+          A7: '#2a91fe',
+          A8: '#3094fe',
+          A9: '#0090ff',
+          A10: '#3b9eff',
+          A11: '#70b8ff',
+          A12: '#c2e6ff',
+        },
+        "grayDark": {
+            A1: 'hsla(0, 0%, 0%, 0)',
+            A2: 'hsla(0, 0%, 100%, 0.04)',
+            A3: 'hsla(0, 0%, 100%, 0.07)',
+            A4: 'hsla(0, 0%, 100%, 0.11)',
+            A5: 'hsla(0, 0%, 100%, 0.13)',
+            A6: 'hsla(0, 0%, 100%, 0.17)',
+            A7: 'hsla(0, 0%, 100%, 0.23)',
+            A8: 'hsla(0, 0%, 100%, 0.33)',
+            A9: 'hsla(0, 0%, 100%, 0.39)',
+            A10: 'hsla(0, 0%, 100%, 0.45)',
+            A11: 'hsla(0, 0%, 100%, 0.69)',
+            A12: 'hsla(0, 0%, 100%, 0.93)',
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -74,7 +112,10 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+    require("tailwindcss-animate"),
+    require('@shrutibalasa/tailwind-grid-auto-fit'),
+  ]
 } satisfies Config
 
 export default config

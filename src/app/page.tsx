@@ -1,13 +1,19 @@
-import Apresentation from '@/pages/apresentation/Apresentation';
-import MyTechs from '@/pages/minhasTechs/MinhasTechs';
-import Portfolio from '@/pages/portfolio/Portfolio';
+"use client"
+
+import About from "@/components/pages/about/about";
+import HomePage from "@/components/pages/home/homePage";
+import MyProject from "@/components/pages/myProject/my-project";
+import Services from "@/components/pages/sevices/services";
+import Skills from "@/components/pages/skills/skills";
 
 export default function Home() {
   return (
-    <>
-      <Apresentation />
-      <MyTechs />
-      <Portfolio />
-    </>
+    <main className="">
+      <HomePage />
+      <About />
+      <Services />
+      <Skills />
+      <MyProject />
+    </main>
   );
 }
