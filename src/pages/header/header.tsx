@@ -6,7 +6,7 @@ import { ModeToggle } from '@/providers/ThemeProvider/modoToggle'
 import { SquareMenu } from 'lucide-react'
 import Link from 'next/link'
 import { useState } from 'react'
-import Links from './links'
+import { Links } from './links'
 
 function Header() {
 

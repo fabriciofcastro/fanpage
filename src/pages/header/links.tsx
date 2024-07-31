@@ -3,7 +3,7 @@ interface LinksProps {
   name: string
 }
 
-const Links: LinksProps[] = [
+export const Links: LinksProps[] = [
   {
     name: 'HOME',
     href: '/',
@@ -30,4 +30,3 @@ const Links: LinksProps[] = [
   },
 ]
 
-export default Links
