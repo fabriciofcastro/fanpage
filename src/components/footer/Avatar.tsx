@@ -1,3 +1,4 @@
+
 // components/Avatar.tsx
 import axios from 'axios';
 import Image from 'next/image';
