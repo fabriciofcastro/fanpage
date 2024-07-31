@@ -24,12 +24,12 @@ export default function MyProject() {
         <div className="px-10 py-6  ">
           <div className="">
             <div className="grid grid-auto-fit-xl gap-10 justify-items-center max-lg:gap-3">
-              <CardsProject title="Sass Standup Website" description="lorem kfndsklfnkalsdfklasdn" imagem={ web1 } />
-              <CardsProject title="Sass Standup Website" description="lorem kfndsklfnkalsdfklasdn" imagem={ web2 } />
-              <CardsProject title="Sass Standup Website" description="lorem kfndsklfnkalsdfklasdn" imagem={ web3 } />
-              <CardsProject title="Sass Standup Website" description="lorem kfndsklfnkalsdfklasdn" imagem={ web4 } />
-              <CardsProject title="Sass Standup Website" description="lorem kfndsklfnkalsdfklasdn" imagem={ web5 } />
-              <CardsProject title="Sass Standup Website" description="lorem kfndsklfnkalsdfklasdn" imagem={ web6 } />
+              <CardsProject title="Website Cyber Punk" description="Site para prover jogo de FPS" imagem={ web1 } />
+              <CardsProject title="Website Gamer Top 10" description="Site ranking gamers Top 10 " imagem={ web2 } />
+              <CardsProject title="Website analytical management" description="Dashboard informativo" imagem={ web3 } />
+              <CardsProject title="Website Food Viogger" description="Promover startup Food " imagem={ web4 } />
+              <CardsProject title="Website Cyber Security Hero" description="Startup de segurança digital" imagem={ web5 } />
+              <CardsProject title="Website Dashboard Audio" description="Dashboard de ajuste de áudio" imagem={ web6 } />
            
             </div>
             <div className="flex justify-center">

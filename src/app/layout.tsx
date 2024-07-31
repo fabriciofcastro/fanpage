@@ -1,10 +1,10 @@
+import Footer from "@/components/footer/footer";
 import { cn } from "@/lib/utils";
+import { Header } from "@/pages/header/header";
 import { ThemeProvider } from "@/providers/ThemeProvider/theme-provider";
-import "../styles/globals.css";
 import type { Metadata } from "next";
 import { Inter as FontSa } from "next/font/google";
-import Footer from "@/components/footer/footer";
-import { Header } from "@/components/pages/home/header/header";
+import "../styles/globals.css";
 
 const inter = FontSa({ subsets: ["latin"] });
 

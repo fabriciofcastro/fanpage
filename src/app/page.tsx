@@ -1,10 +1,10 @@
 "use client"
 
-import About from "@/components/pages/about/about";
-import HomePage from "@/components/pages/home/homePage";
-import MyProject from "@/components/pages/myProject/my-project";
-import Services from "@/components/pages/sevices/services";
-import Skills from "@/components/pages/skills/skills";
+import About from "@/pages/about/about";
+import HomePage from "@/pages/home/homePage";
+import MyProject from "@/pages/myProject/my-project";
+import Services from "@/pages/sevices/services";
+import Skills from "@/pages/skills/skills";
 
 export default function Home() {
   return (

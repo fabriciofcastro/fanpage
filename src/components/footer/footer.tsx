@@ -3,8 +3,8 @@
 import axios from 'axios'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
+import Links from '../../pages/header/links'
 import Logo from '../logo'
-import Links from '../pages/home/header/links'
 
 interface APIProps {
   name: string,
@@ -43,7 +43,7 @@ export default function Footer() {
 
 
   return (
-    <div className="py-8 px-28 max-w bg-sky-500 dark:bg-sky-950">
+    <div className="py-8 px-28 max-w max-lg:px-10 bg-sky-500 dark:bg-sky-950">
       <div className="space-y-6 max-w-screen-2xl m-auto">
 
         <div className=" font-semibold relative flex pb-20 pt-6 flex-col items-center ">
@@ -64,11 +64,11 @@ export default function Footer() {
 
         </div>
      
-        <div className="flex justify-between">
+        <div className="flex justify-between items-center">
           <div>
             <Logo />
           </div>
-          <div className="flex gap-4">
+          <div className="flex gap-4 max-lg:flex-col">
             {
               Links.map(links => {
                 return (

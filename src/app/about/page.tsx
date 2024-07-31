@@ -1,11 +1,11 @@
 
-import Image from 'next/image'
-import style from './about.module.css'
 import avatar from '@/assets/fabricio2.png'
 import { Metadata } from 'next'
-import { GithubLogo, LinkedinLogo, MicrosoftOutlookLogo, WhatsappLogo } from '@phosphor-icons/react/dist/ssr'
-import Link from 'next/link'
+import Image from 'next/image'
+import style from './about.module.css'
 
+import Link from 'next/link'
+import { PhoneIncoming, Github, Linkedin} from 'lucide-react';
 
 export const metadata: Metadata = {
   description: "descrição about",
@@ -25,13 +25,13 @@ const Page = () => {
 
         <div className={ style.icon_social }>
           <Link href="https://github.com/fabriciofcastro" >
-            <GithubLogo />
+            <Github />
           </Link>
           <Link href="https://www.linkedin.com/in/fabriciofcastro" >
-            <LinkedinLogo />
+            <Linkedin />
           </Link>
-          <MicrosoftOutlookLogo />
-          <WhatsappLogo />
+         
+          <PhoneIncoming />
         </div>
 
         <div className={ style.steck }>
