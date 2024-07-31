@@ -14,16 +14,16 @@ import CardsProject from './CardsProject';
 export default function MyProject() {
 
   return (
-    <div className=" pt-6 pb-12 px-28 max-w bg-slate-200 border">
+    <div className=" pt-6 pb-12 px-28 max-w max-lg:px-8">
       <div className="max-w-screen-2xl m-auto" >
         <div className="">
           <div className="flex py-6 gap-10 font-semibold">
             <h1 className="text-bg-blueDark-A1 text-4xl max-lg:text-2xl dark:text-bg-blueDark-A5">MEUS PROJETOS</h1>
           </div>
         </div>
-        <div className="px-10 py-6  ">
-          <div className="">
-            <div className="grid grid-auto-fit-xl gap-10 justify-items-center max-lg:gap-3">
+        <div className="px-10 py-6 max-lg:px-0">
+         
+            <div className="grid grid-auto-fit-xl max-lg:grid-auto-fit-xl gap-10 justify-items-center max-lg:px-0">
               <CardsProject title="Website Cyber Punk" description="Site para prover jogo de FPS" imagem={ web1 } />
               <CardsProject title="Website Gamer Top 10" description="Site ranking gamers Top 10 " imagem={ web2 } />
               <CardsProject title="Website analytical management" description="Dashboard informativo" imagem={ web3 } />
@@ -39,7 +39,6 @@ export default function MyProject() {
               </Button>
             </div>
 
-          </div>
         </div>
       </div>
 

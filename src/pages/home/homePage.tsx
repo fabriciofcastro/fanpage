@@ -14,7 +14,7 @@ export default function HomePage() {
         <title>Meu portfolio</title>
       </Head>
     
-      <div className="mt-24 grid grid-auto-fit-[35rem] gap-12 py-[6rem] max-w-screen-2xl m-auto shadow-lg ">
+      <div className="mt-24 grid grid-auto-fit-[33.7rem] max-sm:grid-auto-fit-sm gap-12 py-[6rem] max-lg:py-10 max-w-screen-2xl m-auto  ">
         <div className="flex justify-center px-10 flex-col space-y-8 max-lg:order-2">
           <div className="space-y-4">
             <div>
@@ -45,9 +45,9 @@ export default function HomePage() {
           </div>
 
         </div>
-        <div className=" flex items-end justify-center  ">
-          <div className="w-[60%] h-[80%] flex items-end justify-center bg-local">
-            <Image src={ Avatar } alt="Fabricio Castro" className="w-[65%]  " />
+        <div className=" flex  justify-center max-lg:order-1 ">
+          <div className="w-[60%] flex items-end justify-center bg-local">
+            <Image src={ Avatar } alt="Fabricio Castro" className="w-[20rem] " />
           </div>
         </div> 
         

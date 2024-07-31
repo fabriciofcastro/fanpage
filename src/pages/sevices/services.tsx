@@ -12,7 +12,7 @@ export default function Services() {
           <h1 className="text-bg-blueDark-A1 text-4xl max-lg:text-2xl dark:text-bg-blueDark-A5">MEUS SERVIÇOS</h1>
           <Separator className="flex-1 flex self-center text-bg-blueDark-A1" />
         </div>
-        <div className="grid grid-auto-fit-[25rem] gap-4 ">
+        <div className="grid grid-auto-fit-[25rem] max-lg:grid-auto-fit-sm gap-4 ">
           <CardGrid
             title="Website Designer"
             contentText="Desenvolvimento de sites institucionais de alta qualidade para fortalecer marcas e negócios, com
