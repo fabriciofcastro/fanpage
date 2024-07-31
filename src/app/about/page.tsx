@@ -46,13 +46,15 @@ const Page = () => {
         <h2 className={ style.heading }> SOBRE <span>MIN</span>  </h2>
         <h3>Front-end developer </h3>
         <p>
-          Sou um entusiasta apaixonado pelo mundo do desenvolvimento front-end. Desde que entrei em contato com a magia da criação de interfaces digitais, tenho buscado incansavelmente aprimorar minhas habilidades e conhecimentos nesta área  emocionante além proporcionar conhecimentos paralelos.
+        Sou Fabrício Castro, um entusiasta e desenvolvedor de SaaS com talento para criar soluções inovadoras. Com 1 ano de experiência no setor, aprimorei minhas habilidades em Web Design e design System, movido pela paixão por alavancar a tecnologia para resolver problemas do mundo real. Atualmente, estou explorando o Next.js, uma poderosa ferramenta para o desenvolvimento de aplicações web, que me permite criar experiências de usuário ricas e responsivas.
+
+
         </p>
         <p>
-          Minha jornada começou com um fascínio pelo design e pela interatividade dos sites que eu visitava, o que me levou a explorar o universo do desenvolvimento web. Desde então, mergulhei de cabeça em aprender as linguagens fundamentais, como HTML, CSS e JavaScript, Reactjs, Nextjs absorvendo tudo o que podia por meio de cursos online, projetos pessoais e experiências práticas.
+        Estou particularmente interessado nas funcionalidades de renderização do lado do servidor e geração de páginas estáticas que o Next.js oferece, pois isso me ajuda a otimizar o desempenho das aplicações e a melhorar a experiência do usuário. Além disso, a integração com APIs e a facilidade de manipulação de rotas me permitem construir soluções escaláveis e flexíveis para os desafios que enfrento.
         </p>
         <p>
-          Além das habilidades técnicas, também valorizo muito a colaboração e a comunicação eficaz. Acredito que o trabalho em equipe é essencial para o sucesso de qualquer projeto, e estou sempre disposto a contribuir com ideias e soluções criativas para alcançar os objetivos da equipe.
+        Busco constantemente aprender novas tecnologias e aprimorar minhas habilidades para me manter atualizado em um campo em rápida evolução. Estou animado com as possibilidades que o Next.js traz e ansioso para aplicá-lo em projetos futuros, onde posso continuar a resolver problemas e agregar valor aos usuários.
         </p>
         <p>
           Estou animado com a oportunidade de aplicar minhas habilidades e conhecimentos em um ambiente profissional, onde posso contribuir para projetos desafiadores e fazer parte de uma equipe que compartilha minha paixão pela criação de experiências digitais excepcionais.
