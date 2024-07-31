@@ -8,7 +8,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 import Links from './links'
 
-export function Header() {
+function Header() {
 
   const [isMenu, setIsMenu] = useState(() => false)
 
@@ -76,3 +76,5 @@ export function Header() {
     </div>
   )
 }
+
+export default Header

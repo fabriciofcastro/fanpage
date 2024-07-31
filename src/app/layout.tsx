@@ -1,6 +1,6 @@
 import Footer from "@/components/footer/footer";
 import { cn } from "@/lib/utils";
-import { Header } from "@/pages/header/header";
+import Header from "@/pages/header/header";
 import { ThemeProvider } from "@/providers/ThemeProvider/theme-provider";
 import type { Metadata } from "next";
 import { Inter as FontSa } from "next/font/google";
