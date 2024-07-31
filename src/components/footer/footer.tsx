@@ -1,8 +1,8 @@
 "use client"
 
-import Link from 'next/link'
-import Links from '../../pages/header/links'
-import Logo from '../logo'
+import Link from 'next/link';
+import { Links } from '../../pages/header/links';
+import Logo from '../logo';
 import Avatar from "./Avatar";
 
 export default function Footer() {
