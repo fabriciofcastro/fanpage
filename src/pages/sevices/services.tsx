@@ -41,7 +41,7 @@ export default function Services() {
           />
           <CardGrid
             title="Especialista SEO"
-            contentText="é um conjunto de práticas e técnicas destinadas a otimizar um site para melhorar sua visibilidade e posicionamento nos resultados de busca orgânica dos motores de busca, como Google, Bing e Yahoo. O objetivo principal do SEO é aumentar o tráfego qualificado para o site, resultando em maior visibilidade e, potencialmente, mais conversões."
+            contentText="É um conjunto de práticas e técnicas destinadas a otimizar um site para melhorar sua visibilidade e posicionamento nos resultados de busca orgânica dos motores de busca, como Google, Bing e Yahoo. O objetivo principal do SEO é aumentar o tráfego qualificado para o site, resultando em maior visibilidade e, potencialmente, mais conversões."
             Icon={ <Palette strokeWidth={ 1.25 } className="group-hover:text-blueDark-A1" /> }
             buttonText="Saber mais"
           />

@@ -1,46 +1,11 @@
 "use client"
 
-import axios from 'axios'
 import Link from 'next/link'
-import { useEffect, useState } from 'react'
 import Links from '../../pages/header/links'
 import Logo from '../logo'
-
-interface APIProps {
-  name: string,
-  avatar_url: string,
-  login: string
-  bio: string,
-  location: string
-}
-
-const api = axios.create({
-  baseURL: "https://api.github.com",
-})
-
+import Avatar from "./Avatar";
 
 export default function Footer() {
-
-  const [avatar, setAvatar] = useState<APIProps>()
-
-  async function getUser() {
-    try {
-      const response = await api.get("/users/fabriciofcastro");
-
-      setAvatar(() => response.data)
-      console.log(response.data);
-
-    } catch (error) {
-      console.error(`${error} Servidor não responde`);
-    }
-  }
-
-  useEffect(() => {
-    4
-    getUser()
-
-  }, [])
-
 
   return (
     <div className="py-8 px-28 max-w max-lg:px-10 bg-sky-500 dark:bg-sky-950">
@@ -55,7 +20,7 @@ export default function Footer() {
               TO
             </span>
             <div className="w-12 rounded-full">
-              <img src={ avatar?.avatar_url } alt="Imagem Fabrício" className="rounded-full" />
+              <Avatar username="fabriciofcastro" />
             </div>
             <span className="text-bg-blueDark-A1 text-5xl dark:text-bg-blueDark-A5">
               GETHER
