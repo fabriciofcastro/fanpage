@@ -5,12 +5,14 @@ import { Button } from '@/components/ui/button'
 import { ModeToggle } from '@/providers/ThemeProvider/modoToggle'
 import { SquareMenu } from 'lucide-react'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 import Links from './links'
 
 function Header() {
 
   const [isMenu, setIsMenu] = useState(() => false)
+  const pathname = usePathname()
 
   function handleMenu() {
     setIsMenu(true)
@@ -32,7 +34,9 @@ function Header() {
                 Links.map(links => {
                   return (
                     <li key={ links.href } className="text-muted font-semibold hover:text-muted-foreground dark:text-muted-foreground transition-colors duration-200 ease-linear">
-                      <Link href={ links.href }>
+                      <Link
+                        className={ `link ${pathname === links.href ? ' text-rose-700' : ''}` }
+                        href={ links.href }>
                         { links.name }
                       </Link>
                     </li>

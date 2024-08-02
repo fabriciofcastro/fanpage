@@ -16,7 +16,7 @@ export default function HireMe() {
     <div className="px-10 py-12 bg-zinc-800 dark:bg-zinc-500  ">
       <div className="grid grid-auto-fit-xl gap-6 max-w-screen-2xl m-auto">
         <Card
-          className=" hover:scale-105 transition-all duration-200 ease-linear shadow-lg"
+          className=" hover:scale-105 transition-all duration-200 ease-linear shadow-lg  overflow-y-scroll"
           onMouseEnter={ () => setIsHovered(true) }
           onMouseLeave={ () => setIsHovered(false) }
           onTouchStart={ () => setIsHovered(true)}
@@ -27,8 +27,8 @@ export default function HireMe() {
               Quer dedicação
             </CardTitle>
             { isHovered && (
-              <CardContent className="absolute left-0 top-0 z-10 w-full px-2 h-12">
-                <div className="relative  mt-1 p-2 border rounded-md bg-blue-950 text-blue-200 dark:bg-slate-300 dark:text-blue-800 dark: ">
+              <CardContent className="absolute left-0 top-0 z-10 w-full px-2 h-12 ">
+                <div className="relative  mt-1 p-2 border rounded-md bg-blue-950 mx-1 text-blue-200 dark:bg-slate-300 dark:text-blue-800 dark: ">
                   { textCard1 }
                 </div>
               </CardContent>
@@ -45,7 +45,7 @@ export default function HireMe() {
 
         </Card>
         <Card
-          className=" hover:scale-105 transition-all duration-200 ease-linear shadow-lg"
+          className=" hover:scale-105 transition-all duration-200 ease-linear shadow-lg overflow-y-scroll"
           onMouseEnter={ () => setIsHovered(true) }
           onMouseLeave={ () => setIsHovered(false) }
           onTouchStart={ () => setIsHovered(true)}
@@ -57,7 +57,7 @@ export default function HireMe() {
             </CardTitle>
             { isHovered && (
               <CardContent className="absolute left-0 top-0 z-10 w-full px-2">
-                <div className="relative  mt-1 p-2 border rounded-md bg-blue-950 text-blue-200 dark:bg-slate-300 dark:text-blue-800 dark: ">
+                <div className="relative  mt-1 p-2 border rounded-md bg-blue-950 mx-1 text-blue-200 dark:bg-slate-300 dark:text-blue-800 dark: ">
                   { textCard2 }
                 </div>
               </CardContent>
@@ -75,7 +75,7 @@ export default function HireMe() {
           </CardContent>
         </Card >
         <Card
-          className=" hover:scale-105 transition-all duration-200 ease-linear shadow-lg"
+          className=" hover:scale-105 transition-all duration-200 ease-linear shadow-lg overflow-y-scroll"
           onMouseEnter={ () => setIsHovered(true) }
           onMouseLeave={ () => setIsHovered(false) }
           onTouchStart={ () => setIsHovered(true)}
@@ -88,7 +88,7 @@ export default function HireMe() {
             </CardTitle>
             { isHovered && (
               <CardContent className="absolute left-0 top-0 z-10 w-full px-2">
-                <div className="relative  mt-1 p-2 border rounded-md bg-blue-950 text-blue-200 dark:bg-slate-300 dark:text-blue-800 dark: ">
+                <div className="relative  mt-1 p-2 border rounded-md bg-blue-950 mx-1 text-blue-200 dark:bg-slate-300 dark:text-blue-800 dark: ">
                   { textCard3 }
                 </div>
               </CardContent>

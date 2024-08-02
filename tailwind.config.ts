@@ -28,7 +28,9 @@ const config = {
         "-0.3": "-0.3rem",
         "-0.4": "-0.4rem",
         "-0.5": "-0.5rem", // Adiciona uma classe -2 para -0.5rem
+        'custom': 'calc(100vh - 96px)',
       },
+    
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
       },
@@ -122,6 +124,7 @@ const config = {
   plugins: [
     require("tailwindcss-animate"),
     require('@shrutibalasa/tailwind-grid-auto-fit'),
+    require('tailwindcss-debug-screens')
   ]
 } satisfies Config
 
