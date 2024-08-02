@@ -34,19 +34,7 @@ export default function Footer() {
             <Logo />
           </div>
           <div className="flex gap-4 max-lg:flex-col">
-            {
-              Links.map(links => {
-                return (
-                  <ul key={ links.name } className="flex items-center gap-4">
-                    <li>
-                      <Link href={ links.href } >
-                        { links.name }
-                      </Link>
-                    </li>
-                  </ul>
-                )
-              })
-            }
+            <Links />
           </div>
         </div>
       </div>

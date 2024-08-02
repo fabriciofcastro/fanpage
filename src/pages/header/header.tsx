@@ -12,8 +12,7 @@ import Links from './links'
 function Header() {
 
   const [isMenu, setIsMenu] = useState(() => false)
-  const pathname = usePathname()
-
+ 
   function handleMenu() {
     setIsMenu(true)
   }
@@ -29,39 +28,14 @@ function Header() {
 
 
           <nav className="max-lg:hidden ">
-            <ul className="flex gap-6">
-              {
-                Links.map(links => {
-                  return (
-                    <li key={ links.href } className="text-muted font-semibold hover:text-muted-foreground dark:text-muted-foreground transition-colors duration-200 ease-linear">
-                      <Link
-                        className={ `link ${pathname === links.href ? ' text-rose-700' : ''}` }
-                        href={ links.href }>
-                        { links.name }
-                      </Link>
-                    </li>
-                  )
-                })
-              }
-            </ul>
+            
           </nav>
-
+          <Links />
           { isMenu &&
           <div className="absolute top-0 left-0 min-h-screen w-full flex justify-center items-center">
             <nav className=" ">
-              <ul className="flex gap-6">
-                {
-                  Links.map(links => {
-                    return (
-                  <li key={ links.href } className="text-muted font-semibold hover:text-muted-foreground dark:text-muted-foreground transition-colors duration-200 ease-linear">
-                    <Link href={ links.href }>
-                      { links.name }
-                    </Link>
-                  </li>
-                )
-              })
-                }
-              </ul>
+              
+             
             </nav>
           </div>
             
