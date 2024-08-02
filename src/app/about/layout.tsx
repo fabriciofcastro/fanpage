@@ -1,5 +1,5 @@
 
-import Header from './components/header/header'
+import Header from './components/headerAbout/header'
 import NavbarLinks from './components/navbar/navbarLinks'
 
 
@@ -11,7 +11,6 @@ export default function AboutLayout({children}: {children: React.ReactNode}) {
     <NavbarLinks />   
    
        <div className="w-full space-y-6">       
-       <Header />  
         {children}
       </div>
         

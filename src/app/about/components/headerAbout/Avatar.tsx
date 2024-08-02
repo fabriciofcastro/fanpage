@@ -35,8 +35,8 @@ const Avatar: React.FC<AvatarProps> = ({ username }) => {
         <Image
           src={ avatarUrl }
           alt={ `Avatar de ${username}` }
-          width={ 200 }
-          height={ 230 }
+          width={ 150 }
+          height={ 180 }
           className="rounded-md"
         />
       ) : (

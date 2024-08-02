@@ -21,11 +21,7 @@ export default function Header() {
 
           </div>
           <div>
-            <div className="flex">
               
-            </div>
-            <div></div>
-            <div></div>
           </div>
         </div>
       </Card>

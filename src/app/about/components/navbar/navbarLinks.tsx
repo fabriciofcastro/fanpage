@@ -10,12 +10,12 @@ import {
   ChevronRight,
   File,
   Inbox,
-  MessagesSquare,
-  Search,
   Send,
-  ShoppingCart,
   Trash2,
-  Users2,
+  LayoutDashboard,
+  NotebookTabs,
+  GraduationCap,
+  BicepsFlexed,
 } from "lucide-react"
 import { Nav } from "./navbar-about"
 import { useState } from "react"
@@ -46,29 +46,29 @@ export default function NavbarLinks() {
                 title: "Sobre mim",
                 label: "",
                 icon: Inbox,
-                variant: "default",
+                variant: "ghost",
                 href: "/about"
               },
               {
-                title: "Dashboard",
+                title: "Skills",
                 label: "",
-                icon: File,
+                icon: BicepsFlexed,
                 variant: "ghost",
-                href: "/dashboard"
+                href: "/about/skills"
               },
               {
-                title: "Sent",
+                title: "Formação",
                 label: "",
-                icon: Send,
+                icon: GraduationCap ,
                 variant: "ghost",
-                href: "#"
+                href: "/about/academic"
               },
               {
-                title: "Junk",
+                title: "Contato",
                 label: "",
                 icon: ArchiveX,
                 variant: "ghost",
-                href: "#"
+                href: "/about/contact"
               },
               {
                 title: "Trash",
@@ -78,9 +78,9 @@ export default function NavbarLinks() {
                 href: "#"
               },
               {
-                title: "Archive",
+                title: "Contato",
                 label: "",
-                icon: Archive,
+                icon: NotebookTabs,
                 variant: "ghost",
                 href: "#"
               },

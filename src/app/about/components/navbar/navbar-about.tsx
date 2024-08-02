@@ -12,7 +12,6 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip"
 import { usePathname } from "next/navigation"
-import { ResizableHandle, ResizablePanelGroup } from "@/components/ui/resizable"
 
 interface NavProps {
   isCollapsed: boolean
@@ -41,7 +40,7 @@ export function Nav({ links, isCollapsed }: NavProps) {
             <Tooltip key={index} delayDuration={0}>
               <TooltipTrigger asChild>
                 <Link
-                  href="#"
+                  href={link.href}
                   className={cn(
                     buttonVariants({ variant: link.href === pathname ? "default" : "ghost" , size: "icon" }),
                     "h-9 w-9",
@@ -65,12 +64,13 @@ export function Nav({ links, isCollapsed }: NavProps) {
           ) : (
             <Link
               key={index}
-              href="#"
+              href={link.href}
               className={cn(
-                buttonVariants({ variant: link.href === pathname ? "default" : "ghost", size: "sm" }),
-                link.variant === "default" &&
-                  "dark:bg-muted dark:text-white dark:hover:bg-muted dark:hover:text-white",
-                "justify-start"
+                buttonVariants({ 
+                  variant: link.href === pathname ? "default" : "ghost", size: "sm" }),
+                  link.variant === "default" &&
+                   "dark:bg-muted dark:text-white dark:hover:bg-muted dark:hover:text-white", 
+                   "justify-start"
               )}
             >
               <link.icon className="mr-2 h-4 w-4" />
