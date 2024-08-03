@@ -28,9 +28,9 @@ function Header() {
 
 
           <nav className="max-lg:hidden ">
-            
+            <Links />
           </nav>
-          <Links />
+          
           { isMenu &&
           <div className="absolute top-0 left-0 min-h-screen w-full flex justify-center items-center">
             <nav className=" ">

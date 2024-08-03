@@ -2,7 +2,7 @@ import CardGrid from '@/components/card/card-grid'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Separator } from '@/components/ui/separator'
-import { Palette, View } from 'lucide-react'
+import { Cable, Computer, MonitorPlay, Option, Palette, Presentation, View } from 'lucide-react'
 
 export default function Services() {
   return (
@@ -24,31 +24,31 @@ export default function Services() {
           <CardGrid
             title="Marketing Digital"
             contentText="Estratégia foca na criação e distribuição de conteúdo valioso, relevante e consistente para atrair e engajar um público-alvo definido. O marketing de conteúdo pode incluir blogs, artigos, e-books, infográficos, vídeos, podcasts e webinars."
-            Icon={ <Palette strokeWidth={ 1.25 } className="group-hover:text-blueDark-A1" /> }
+            Icon={ <Presentation strokeWidth={ 1.25 } className="group-hover:text-blueDark-A1" /> }
             buttonText="Saber mais"
           />
           <CardGrid
             title="Computadores e notebooks"
             contentText="Manutenção de microcomputadores e notebooks com uma abordagem abrangente que inclui preventiva, corretiva e evolutiva, que beneficia você de um desempenho melhorado, maior durabilidade dos equipamentos e menor risco de falhas inesperadas."
-            Icon={ <Palette strokeWidth={ 1.25 } className="group-hover:text-blueDark-A1" /> }
+            Icon={ <Computer strokeWidth={ 1.25 } className="group-hover:text-blueDark-A1" /> }
             buttonText="Saber mais"
           />
           <CardGrid
             title="Media Social"
             contentText="As mídias sociais são uma ferramenta poderosa para comunicação, marketing e construção de relacionamentos. Ao adotar uma estratégia eficaz de mídias sociais, empresas e indivíduos podem se conectar com seu público, aumentar a visibilidade da marca e impulsionar o engajamento. Contudo, é crucial estar ciente dos desafios e manter-se atualizado sobre as tendências."
-            Icon={ <Palette strokeWidth={ 1.25 } className="group-hover:text-blueDark-A1" /> }
+            Icon={ <MonitorPlay strokeWidth={ 1.25 } className="group-hover:text-blueDark-A1" /> }
             buttonText="Saber mais"
           />
           <CardGrid
             title="Especialista SEO"
             contentText="É um conjunto de práticas e técnicas destinadas a otimizar um site para melhorar sua visibilidade e posicionamento nos resultados de busca orgânica dos motores de busca, como Google, Bing e Yahoo. O objetivo principal do SEO é aumentar o tráfego qualificado para o site, resultando em maior visibilidade e, potencialmente, mais conversões."
-            Icon={ <Palette strokeWidth={ 1.25 } className="group-hover:text-blueDark-A1" /> }
+            Icon={ <Cable strokeWidth={ 1.25 } className="group-hover:text-blueDark-A1" /> }
             buttonText="Saber mais"
           />
           <CardGrid
             title="Outros serviços"
             contentText="Conheça outras soluções para sua necessidade "
-            Icon={ <Palette strokeWidth={ 1.25 } className="group-hover:text-blueDark-A1" /> }
+            Icon={ <Option strokeWidth={ 1.25 } className="group-hover:text-blueDark-A1" /> }
             buttonText="Saber mais"
           />
         </div>

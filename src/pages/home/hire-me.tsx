@@ -19,8 +19,6 @@ export default function HireMe() {
           className=" hover:scale-105 transition-all duration-200 ease-linear shadow-lg  overflow-y-scroll"
           onMouseEnter={ () => setIsHovered(true) }
           onMouseLeave={ () => setIsHovered(false) }
-          onTouchStart={ () => setIsHovered(true)}
-          onTouchEnd=  { () => setIsHovered(false)}
         >
           <CardHeader>
             <CardTitle className="text-blueDark-A1">
