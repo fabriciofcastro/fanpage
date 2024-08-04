@@ -24,13 +24,13 @@ import { Card } from "@/components/ui/card"
 
 export default function NavbarLinks() {
 
-  const [isCollapsed, setIsCollapsed] = useState(false)
+  const [isCollapsed, setIsCollapsed] = useState(true)
   
   function handleCollapsed() {
     setIsCollapsed(() => !isCollapsed)
   }
   return (
-    <Card>
+    <Card className="max-md:hidden">
     <div className="px-3 pt-3">
       <Button
       className="rounded-full p-0 h-7 w-7 ml-3"
@@ -39,8 +39,7 @@ export default function NavbarLinks() {
       >
         {isCollapsed ? <ChevronRight size={18} /> : <ChevronLeft size={18} />}
       </Button>
-      <Nav
-            isCollapsed={isCollapsed}
+      <Nav isCollapsed={isCollapsed}
             links={[
               {
                 title: "Sobre mim",

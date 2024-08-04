@@ -1,7 +1,7 @@
 "use client"
 
 import { Card } from '@/components/ui/card'
-import { Code, Linkedin, Mail, User } from 'lucide-react'
+import { GitBranchPlus, Linkedin, Mail, User } from 'lucide-react'
 import Avatar from './Avatar'
 import ContentInfo from './content-information'
 
@@ -15,9 +15,23 @@ export default function Header() {
         <div className="w-full flex flex-col gap-6">
 
           <div className="grid grid-auto-fit gap-6">
-            <ContentInfo title="Fabricio Feitosa" Icon={ User } description="Meu nome" />
-            <ContentInfo title="Linkedin" Icon={ Linkedin } description="linkedin.com/in/fabriciofcastro" />
-            <ContentInfo title="E-mail" Icon={ Mail } description="fabriciofeitosacastro@gmail" />
+            
+            <ContentInfo title="Linkedin" 
+              Icon={ Linkedin } 
+              description="linkedin.com/in/fabriciofcastro" 
+              href="https://linkedin.com/in/fabriciofcastro" 
+          />
+            <ContentInfo title="E-mail" 
+              Icon={ Mail } 
+              description="fabriciofeitosacastro@gmail.com" 
+              href="https://gmail.com" 
+          />
+            <ContentInfo 
+              title="Github" 
+              Icon={GitBranchPlus} 
+              description="github.com/fabriciofcastro/" 
+              href="" 
+          />
 
           </div>
           <div>

@@ -33,12 +33,12 @@ export default function HireMe() {
             ) }
           </CardHeader>
           <CardContent className="relative">
-            <div className="line-clamp-2 rounded-md shadow-md mb-6">
+            <div className="line-clamp-2 mb-6">
               { textCard1 }
             </div>
-            <Button variant="link">
-              Continuei lendo-me { '>' }
-            </Button>
+            <div className="underline leading-10">
+                Continuei lendo { '>' }
+            </div>
           </CardContent>
 
         </Card>
@@ -65,10 +65,8 @@ export default function HireMe() {
             <div className="line-clamp-2 rounded-md shadow-md mb-6">
               { textCard2 }
             </div> 
-            <div>
-              <Button variant="link">
-                continuei lendo { '>' }
-              </Button>
+            <div className="underline leading-10">
+                Continuei lendo { '>' }
             </div>
           </CardContent>
         </Card >
@@ -96,10 +94,8 @@ export default function HireMe() {
             <div className="line-clamp-2 rounded-md shadow-md mb-6">
               { textCard3 }
             </div> 
-            <div>
-              <Button variant="link">
-                Continuie lendo { '>' }
-              </Button>
+            <div className="underline leading-10">
+                Continuei lendo { '>' }
             </div>
           </CardContent>
         </Card>
