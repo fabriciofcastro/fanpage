@@ -6,7 +6,13 @@ import { PieChart, Pie, Cell } from 'recharts';
 
 const RADIAN = Math.PI / 180;
 
-const data = [
+interface DataPoint {
+  name: string;
+  value: number;
+  color: string;
+}
+
+const data: DataPoint[] = [
   { name: 'A', value: 33, color: '#ff0000' },
   { name: 'B', value: 33, color: '#ff7b00' },
   { name: 'C', value: 33, color: '#30cc00' },
@@ -18,7 +24,7 @@ const iR = 50;
 const oR = 100;
 const value = 80;
 
-const needle = (value: number, data, cx: number, cy: number, iR: number, oR: number, color: string) => {
+const needle = (value: number, data:DataPoint[], cx: number, cy: number, iR: number, oR: number, color: string) => {
   let total = 0;
   data.forEach((v) => {
     total += v.value;
@@ -38,8 +44,8 @@ const needle = (value: number, data, cx: number, cy: number, iR: number, oR: num
   const yp = y0 + length * sin;
 
   return [
-    <circle cx={x0} cy={y0} r={r} fill={color} stroke="none" />,
-    <path d={`M${xba} ${yba}L${xbb} ${ybb} L${xp} ${yp} L${xba} ${yba}`} stroke="#none" fill={color} />,
+    <circle key={color} cx={x0} cy={y0} r={r} fill={color} stroke="none" />,
+    <path key={color} d={`M${xba} ${yba}L${xbb} ${ybb} L${xp} ${yp} L${xba} ${yba}`} stroke="#none" fill={color} />,
   ];
 };
 
