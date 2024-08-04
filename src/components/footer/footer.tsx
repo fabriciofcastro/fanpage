@@ -13,22 +13,22 @@ export default function Footer() {
 
         <div className=" font-semibold relative flex pb-20 pt-6 flex-col items-center ">
           <p className="text-bg-blueDark-A1 text-5xl dark:text-bg-blueDark-A5 ">
-            LET{`'`}S BUILD
+            LET{ `'` }S BUILD
           </p> <br />
           <div className="flex gap-4">
             <span className="text-bg-blueDark-A1 text-5xl dark:text-bg-blueDark-A5 ">
-              TO
+              COME
             </span>
             <div className="w-12 rounded-full">
               <Avatar username="fabriciofcastro" />
             </div>
             <span className="text-bg-blueDark-A1 text-5xl dark:text-bg-blueDark-A5">
-              GETHER
+            ON!
             </span>
           </div>
 
         </div>
-     
+
         <div className="flex justify-between items-center">
           <div>
             <Logo />

@@ -63,11 +63,11 @@ export default function NavbarLinks() {
                 href: "/about/academic"
               },
               {
-                title: "Contato",
+                title: "------",
                 label: "",
                 icon: ArchiveX,
                 variant: "ghost",
-                href: "/about/contact"
+                href: "#"
               },
               {
                 title: "Trash",
@@ -81,7 +81,7 @@ export default function NavbarLinks() {
                 label: "",
                 icon: NotebookTabs,
                 variant: "ghost",
-                href: "#"
+                href: "/about/contact"
               },
             ]}
           />
