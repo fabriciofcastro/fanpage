@@ -6,6 +6,7 @@ import { BicepsFlexed, Download } from "lucide-react"
 import Head from 'next/head'
 import Image from 'next/image'
 import HireMe from "./hire-me"
+import Link from "next/link"
 
 export default function HomePage() {
   return (
@@ -13,7 +14,7 @@ export default function HomePage() {
       <Head>
         <title>Meu portfolio</title>
       </Head>
-    
+
       <div className="mt-24 grid grid-auto-fit-[30.5rem] max-sm:grid-auto-fit gap-12 py-[6rem] max-lg:py-10 max-w-screen-2xl m-auto  ">
         <div className="flex justify-center px-10 flex-col space-y-8 max-lg:order-2">
           <div className="space-y-4">
@@ -34,23 +35,21 @@ export default function HomePage() {
 
           </div>
           <div className="flex gap-4">
-            <Button className="flex gap-2">
-              Currículo
-              <Download size="16" />
-            </Button>
-            <Button variant="outline" className="flex gap-2" >
+            <Link href="/about/skills">
+            <Button variant="link" className="flex gap-2" >
               Skills
               <BicepsFlexed strokeWidth={ 1.25 } size="16" />
             </Button>
+            </Link>
           </div>
 
         </div>
-        <div className=" flex  justify-center max-lg:order-1 ">
+        <div className=" flex  justify-center max-lg:order-1 bg-[url('../assets/vector.png')] bg-no-repeat bg-center bg-contain">
           <div className="w-[60%] flex items-end justify-center bg-local">
-            <Image src={ Avatar } alt="Fabricio Castro" className="w-[20rem] " />
+            <Image src={ Avatar } alt="Fabrício Castro" className="w-[21rem] " />
           </div>
-        </div> 
-        
+        </div>
+
       </div>
       <HireMe />
     </div>

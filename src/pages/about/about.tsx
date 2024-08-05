@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 
 export default function About() {
   return (
@@ -11,6 +12,11 @@ export default function About() {
             Ei!
             Sou Fabrício Castro, um entusiasta e desenvolvedor de SaaS com talento para criar soluções inovadoras. Com 1 ano de experiência no setor, aprimorei minhas habilidades em Web Design e designer System, movido pela paixão por alavancar a tecnologia para resolver problemas do mundo real. 
           </p>
+          <div>
+            <Button variant="default">
+              Mais sobre mim
+            </Button>
+          </div>
         </div>
       </div>
     </div>

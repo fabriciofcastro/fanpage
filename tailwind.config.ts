@@ -35,7 +35,7 @@ const config = {
         sans: ["var(--font-sans)", ...fontFamily.sans],
       },
       backgroundImage: {
-        bgAvatar: "url:(../../assets/image/bg-img.svg )"
+        bgAvatar: "url:(../../../assets/vector.png)"
       },
       colors: {
         "blueDark": {

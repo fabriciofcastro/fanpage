@@ -1,6 +1,11 @@
-import { Button } from '@/components/ui/button';
+"use client"
+
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Dialog, DialogTrigger } from '@/components/ui/dialog';
 import { useState } from 'react';
+import { DialogHireDedication } from './popup-heire-dedication';
+import { DialogHireRevision } from './popup-heire-revision';
+import { DialogHireTalk } from './popup-heire-talk';
 
 export default function HireMe() {
 
@@ -16,13 +21,13 @@ export default function HireMe() {
     <div className="px-10 py-12 bg-zinc-800 dark:bg-zinc-500  ">
       <div className="grid grid-auto-fit-xl gap-6 max-w-screen-2xl m-auto">
         <Card
-          className=" hover:scale-105 transition-all duration-200 ease-linear shadow-lg  overflow-y-scroll"
-          onMouseEnter={ () => setIsHovered(true) }
-          onMouseLeave={ () => setIsHovered(false) }
+          className=" hover:scale-105 transition-all duration-200 ease-linear shadow-lg"
+          // onMouseEnter={ () => setIsHovered(true) }
+          // onMouseLeave={ () => setIsHovered(false) }
         >
           <CardHeader>
             <CardTitle className="text-blueDark-A1">
-              Quer dedicação
+              Dedicação
             </CardTitle>
             { isHovered && (
               <CardContent className="absolute left-0 top-0 z-10 w-full px-2 h-12 ">
@@ -36,18 +41,20 @@ export default function HireMe() {
             <div className="line-clamp-2 mb-6">
               { textCard1 }
             </div>
-            <div className="underline leading-10">
-                Continuei lendo { '>' }
-            </div>
+            <Dialog>
+              <DialogTrigger>
+                <DialogHireDedication />
+              </DialogTrigger>
+            </Dialog> 
           </CardContent>
 
         </Card>
         <Card
-          className=" hover:scale-105 transition-all duration-200 ease-linear shadow-lg overflow-y-scroll"
-          onMouseEnter={ () => setIsHovered(true) }
-          onMouseLeave={ () => setIsHovered(false) }
-          onTouchStart={ () => setIsHovered(true)}
-          onTouchEnd=  { () => setIsHovered(false)}
+          className=" hover:scale-105 transition-all duration-200 ease-linear shadow-lg "
+          // onMouseEnter={ () => setIsHovered(true) }
+          // onMouseLeave={ () => setIsHovered(false) }
+          // onTouchStart={ () => setIsHovered(true) }
+          // onTouchEnd={ () => setIsHovered(false) }
         >
           <CardHeader>
             <CardTitle className="text-blueDark-A1">
@@ -64,39 +71,37 @@ export default function HireMe() {
           <CardContent>
             <div className="line-clamp-2 mb-6">
               { textCard2 }
-            </div> 
-            <div className="underline leading-10">
-                Continuei lendo { '>' }
             </div>
+            <Dialog>
+              <DialogTrigger>
+                <DialogHireRevision />
+              </DialogTrigger>
+            </Dialog> 
           </CardContent>
         </Card >
         <Card
-          className=" hover:scale-105 transition-all duration-200 ease-linear shadow-lg overflow-y-scroll"
-          onMouseEnter={ () => setIsHovered(true) }
-          onMouseLeave={ () => setIsHovered(false) }
-          onTouchStart={ () => setIsHovered(true)}
-          onTouchEnd=  { () => setIsHovered(false)}
+          className=" hover:scale-105 transition-all duration-200 ease-linear shadow-lg "
+          // onMouseEnter={ () => setIsHovered(true) }
+          // onMouseLeave={ () => setIsHovered(false) }
+          // onTouchStart={ () => setIsHovered(true) }
+          // onTouchEnd={ () => setIsHovered(false) }
 
         >
           <CardHeader>
             <CardTitle className="text-blueDark-A1">
               Vamos conversar
             </CardTitle>
-            { isHovered && (
-              <CardContent className="absolute left-0 top-0 z-10 w-full px-2">
-                <div className="relative  mt-1 p-2 border rounded-md bg-blue-950 mx-1 text-blue-200 dark:bg-slate-300 dark:text-blue-800 dark: ">
-                  { textCard3 }
-                </div>
-              </CardContent>
-            ) }
+            
           </CardHeader>
           <CardContent>
             <div className="line-clamp-2 mb-6">
               { textCard3 }
-            </div> 
-            <div className="underline leading-10">
-                Continuei lendo { '>' }
             </div>
+            <Dialog>
+              <DialogTrigger>
+                <DialogHireTalk />
+              </DialogTrigger>
+            </Dialog> 
           </CardContent>
         </Card>
       </div>

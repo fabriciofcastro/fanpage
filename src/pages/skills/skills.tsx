@@ -21,7 +21,9 @@ export default function Skills() {
             title="Gerenciamento de projetos"
             textContent="No domínio do gerenciamento de projetos, supervisão e iniciativas multifacetadas, desde o início até a conclusão. Com um olhar atento aos detalhes e fortes habilidades organizacionais, orquestro um fluxo de trabalho contínuo, garantindo a entrega pontual de projetos dentro das restrições orçamentárias."
           />
-          <CardsSkills title="Marketing Digital" textContent="Na área de desenvolvimento web, me destaquei na criação de conteúdos dinâmicos e fáceis de usar. Desde a conceituação, aproveito minha expertise em front-end para construir plataformas digitais imersivas. Com proficiência em HTML, CSS e Javascript."
+          <CardsSkills 
+            title="Web Designer" 
+            textContent="Na área de desenvolvimento web, me destaquei na criação de conteúdos dinâmicos e fáceis de usar. Desde a conceituação, aproveito minha expertise em front-end para construir plataformas digitais imersivas. Com proficiência em HTML, CSS e Javascript."
           />
         </div>
         <Button className="flex gap-2">

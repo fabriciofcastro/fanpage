@@ -28,10 +28,12 @@ const Page = () => {
         <CardContent>
           <div className="space-y-4">
 
-            <p className="indent-2 "> Minha trajetória profissional começou como atendente na drogaria JC por três anos e Drogaleste por mais três anos. Essa experiência foi fundamental para o desenvolvimento das minhas habilidades de atendimento ao cliente, comunicação e resolução de problemas.
+            <p className="indent-2 "> 
+              Minha trajetória profissional começou como atendente na drogaria JC por três anos e Drogaleste por mais três anos. Essa experiência foi fundamental para o desenvolvimento das minhas habilidades de atendimento ao cliente, comunicação e resolução de problemas.
             </p>
 
-            <p className="indent-2 ">Após esse período, trabalhei no escritório da Frileste Refrigeração por um ano. Nesse cargo, adquiri habilidades administrativas e operacionais, o que ampliou minha visão sobre o funcionamento interno de uma empresa e me proporcionou uma compreensão mais profunda dos processos empresariais.
+            <p className="indent-2 ">
+              Após esse período, trabalhei no escritório da Frileste Refrigeração por um ano. Nesse cargo, adquiri habilidades administrativas e operacionais, o que ampliou minha visão sobre o funcionamento interno de uma empresa e me proporcionou uma compreensão mais profunda dos processos empresariais.
             </p>
             <p className="indent-2 ">
               Buscando novos desafios, decidi abrir meu próprio negócio, a Inforleste Informática, onde atuei por 12 anos. Minha loja oferecia venda de hardware e periféricos, além de uma ampla gama de serviços, incluindo:
