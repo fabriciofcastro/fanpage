@@ -3,9 +3,9 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Dialog, DialogTrigger } from '@/components/ui/dialog';
 import { useState } from 'react';
-import { DialogHireDedication } from './popup-heire-dedication';
-import { DialogHireRevision } from './popup-heire-revision';
-import { DialogHireTalk } from './popup-heire-talk';
+import DialogHireDedication from './popup-heire-dedication';
+import DialogHireRevision from './popup-heire-revision';
+import DialogHireTalk from './popup-heire-talk';
 
 export default function HireMe() {
 

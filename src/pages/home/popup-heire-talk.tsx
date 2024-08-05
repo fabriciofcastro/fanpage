@@ -7,7 +7,7 @@ import {
   DialogTrigger
 } from "@/components/ui/dialog"
 
-export function DialogHireTalk() {
+export default function DialogHireTalk() {
   return (
     <Dialog>
       <DialogTrigger asChild>
