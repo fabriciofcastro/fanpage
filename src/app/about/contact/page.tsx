@@ -50,7 +50,7 @@ export default function Component() {
           </div>
           <div className="bg-muted rounded-lg p-6 md:p-8">
             <div className="space-y-4">
-              <h3 className="text-2xl font-bold">Entre em contato</h3>
+              <h3 className="text-2xl font-bold">Conecte-se comigo</h3>
               <div className="space-y-2">
                 <div className="flex items-center gap-2">
                   <LocateIcon className="h-5 w-5 text-muted-foreground" />

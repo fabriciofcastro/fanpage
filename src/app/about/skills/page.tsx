@@ -1,6 +1,7 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { BicepsFlexed, Code2 } from 'lucide-react'
+import BarProgress from './barprogress'
 import PieChartWithNeedleCSS from './chart/PieChartWithNeedleCSS'
 import PieChartWithNeedleHTML from './chart/PieChartWithNeedleHTML'
 import PieChartWithNeedleJS from './chart/PieChartWithNeedleJS'
@@ -41,6 +42,48 @@ export default function Skill() {
 
           </div>
         </CardContent>
+        <div className="grid grid-auto-fit">
+          <CardContent>
+            <Card>
+
+              <CardHeader>
+                <CardTitle>Frameworks & Libraries</CardTitle>
+              </CardHeader>
+              <CardContent >
+                <BarProgress percentage={ 60 } textLanguage="Reat" textPercentage="60%" />
+                <BarProgress percentage={ 60 } textLanguage="Next" textPercentage="60%" />
+                <BarProgress percentage={ 40 } textLanguage="Styled-Components" textPercentage="40%" />
+                <BarProgress percentage={ 50 } textLanguage="Tailwindcss" textPercentage="50%" />
+              </CardContent>
+
+            </Card>
+          </CardContent>
+
+          <CardContent>
+            <Card>
+              <CardHeader>
+                <CardTitle>ORM & SMS</CardTitle>
+              </CardHeader>
+              <CardContent >
+                <BarProgress percentage={ 60 } textLanguage="Prisma" textPercentage="60%" />
+                <BarProgress percentage={ 60 } textLanguage="Sanity" textPercentage="60%" />
+              </CardContent>
+            </Card>
+          </CardContent>
+          <CardContent>
+            <Card>
+              <CardHeader>
+                <CardTitle>DATABASE</CardTitle>
+              </CardHeader>
+              <CardContent >
+                <BarProgress percentage={ 10 } textLanguage="PostgreSQL" textPercentage="10%" />
+                <BarProgress percentage={ 10 } textLanguage="SQL Server" textPercentage="10%" />
+              </CardContent>
+            </Card>
+          </CardContent>
+
+
+        </div>
 
       </Card>
     </div>
