@@ -25,7 +25,7 @@ const Page = () => {
             </div>
           </CardDescription>
         </CardHeader>
-        <CardContent>
+        <CardContent className="bg-[url('../assets/banner_bg.png')] bg-no-repeat bg-cover">
           <div className="space-y-4">
 
             <p className="indent-2 "> 

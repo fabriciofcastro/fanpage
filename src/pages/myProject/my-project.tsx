@@ -33,7 +33,7 @@ export default function MyProject() {
            
             </div>
             <div className="flex justify-center">
-              <Button className="flex gap-2 mt-14">
+              <Button className="flex gap-2 mt-14 px-6">
                 Conheçer mais projetos
                 <View strokeWidth={ 1.25 } />
               </Button>

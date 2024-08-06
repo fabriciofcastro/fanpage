@@ -2,15 +2,15 @@
 
 import Avatar from "@/assets/image/avatar/fabricio.png"
 import { Button } from "@/components/ui/button"
-import { BicepsFlexed, Download } from "lucide-react"
+import { BicepsFlexed } from "lucide-react"
 import Head from 'next/head'
 import Image from 'next/image'
-import HireMe from "./hire-me"
 import Link from "next/link"
+import HireMe from "./hire-me"
 
 export default function HomePage() {
   return (
-    <div className="dark:bg-muted-foreground ">
+    <div className="bg-[url('../assets/banner_bg.png')] bg-no-repeat bg-cover">
       <Head>
         <title>Meu portfolio</title>
       </Head>
@@ -36,10 +36,10 @@ export default function HomePage() {
           </div>
           <div className="flex gap-4">
             <Link href="/about/skills">
-            <Button variant="link" className="flex gap-2" >
-              Skills
-              <BicepsFlexed strokeWidth={ 1.25 } size="16" />
-            </Button>
+              <Button variant="default" className="flex gap-2 px-6" >
+                Skills
+                <BicepsFlexed strokeWidth={ 1.25 } size="16" />
+              </Button>
             </Link>
           </div>
 

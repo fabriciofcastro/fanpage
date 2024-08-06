@@ -21,7 +21,7 @@ export default function Skill() {
           </CardDescription>
         </CardHeader>
       </Card>
-      <Card>
+      <Card className="bg-[url('../assets/banner_bg.png')] bg-no-repeat bg-cover">
         <CardHeader>
           <CardTitle className="flex gap-2">
             <Code2 />

@@ -10,16 +10,18 @@ export default function Component() {
   return (
     <div className="flex flex-col gap-4">
 
-      <Card className=" bg-muted shadow-xl dark:bg-muted-foreground">
+      <Card className=" bg-muted shadow-xl dark:bg-muted-foreground ">
         <CardHeader>
           <CardTitle className="flex gap-2">
           <GraduationCap size={20}/>
             Formação Acadêmica
           </CardTitle>
-          <CardDescription className="text-muted-foreground dark:text-muted ">Explore minha jornada educacional e minhas conquistas.</CardDescription>
+          <CardDescription className="text-muted-foreground dark:text-muted ">
+            Explore minha jornada educacional e minhas conquistas.
+          </CardDescription>
         </CardHeader>
       </Card>
-      <Card className="w-full mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 lg:py-20 ">
+      <Card className="w-full mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 lg:py-20 bg-[url('../assets/banner_bg.png')] bg-no-repeat bg-cover">
         <div className="grid gap-8">
           <div className="grid gap-8 justify-center">
 

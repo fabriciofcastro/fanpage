@@ -1,7 +1,7 @@
 "use client"
 
 import { Card } from '@/components/ui/card'
-import { GitBranchPlus, Linkedin, Mail, User } from 'lucide-react'
+import { Github, Linkedin, Mail } from 'lucide-react'
 import Avatar from './Avatar'
 import ContentInfo from './content-information'
 
@@ -28,14 +28,12 @@ export default function Header() {
           />
             <ContentInfo 
               title="Github" 
-              Icon={GitBranchPlus} 
+              Icon={Github} 
               description="github.com/fabriciofcastro/" 
               href="" 
           />
-
           </div>
-          <div>
-              
+          <div>              
           </div>
         </div>
       </Card>
