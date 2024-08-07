@@ -14,8 +14,8 @@ import NavbarMobile from "./navbarMobili"
 export default function MenuResponsive() {
   return (
     <Drawer direction='left'>
-      <DrawerTrigger>
-        <SquareMenu />
+      <DrawerTrigger className="p-0">
+        <SquareMenu size={22}/>
       </DrawerTrigger>
       <DrawerOverlay />
       <DrawerContent className=" flex flex-col h-full w-[400px] mt-24 fixed bottom-0 right-0">
@@ -25,7 +25,7 @@ export default function MenuResponsive() {
             <Button className="border p-0 h-0"  >
               <X className="bg-rose-900 rounded-full" />
             </Button>
-          </DrawerClose>
+          </DrawerClose> 
         </DrawerHeader>
         <NavbarMobile />
       </DrawerContent>
