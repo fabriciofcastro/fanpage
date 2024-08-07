@@ -3,19 +3,15 @@
 "use client"
 
 import {
-  AlertCircle,
-  Archive,
-  ArchiveX,
   ChevronLeft,
   ChevronRight,
-  File,
   Inbox,
-  Send,
   Trash2,
-  LayoutDashboard,
+  PanelsTopLeft,
   NotebookTabs,
   GraduationCap,
   BicepsFlexed,
+  Construction,
 } from "lucide-react"
 import { Nav } from "./navbar-about"
 import { useState } from "react"
@@ -63,18 +59,18 @@ export default function NavbarLinks() {
                 href: "/about/academic"
               },
               {
-                title: "------",
+                title: "Projetos",
                 label: "",
-                icon: ArchiveX,
+                icon: PanelsTopLeft,
                 variant: "ghost",
-                href: "#"
+                href: "/about/project"
               },
               {
                 title: "Trash",
                 label: "",
-                icon: Trash2,
+                icon: Construction,
                 variant: "ghost",
-                href: "#"
+                href: "/about/services"
               },
               {
                 title: "Contato",

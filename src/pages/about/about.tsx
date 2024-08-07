@@ -12,7 +12,7 @@ export default function About() {
         <div className="px-36 max-lg:px-0">
           <p className="text-xl text-center max-md:text-lg max-md:text-start">
             Ei!
-            Sou Fabrício Castro, um entusiasta e desenvolvedor de SaaS com talento para criar soluções inovadoras. Com 1 ano de experiência no setor, aprimorei minhas habilidades em Web Design e designer System, movido pela paixão por alavancar a tecnologia para resolver problemas do mundo real.
+            Sou Fabrício Castro, um entusiasta e desenvolvedor de SaaS com talento para criar soluções inovadoras. Aprimorei minhas habilidades em Web Design e designer System, movido pela paixão por alavancar a tecnologia para resolver problemas do mundo real.
           </p>
           <div className="mt-10 w-full flex justify-center">
             <Link href="/about">
