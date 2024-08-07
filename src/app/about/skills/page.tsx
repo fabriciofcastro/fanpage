@@ -62,7 +62,7 @@ export default function Skill() {
           <CardContent>
             <Card>
               <CardHeader>
-                <CardTitle>ORM & SMS</CardTitle>
+                <CardTitle>ORM & CMS</CardTitle>
               </CardHeader>
               <CardContent >
                 <BarProgress percentage={ 40 } textLanguage="Prisma" textPercentage="40%" />

@@ -9,7 +9,7 @@ import {
   DrawerTrigger
 } from "@/components/ui/drawer"
 import { SquareMenu, X } from "lucide-react"
-import NavbarMobile from "./navbarLinks"
+import NavbarMobile from "./navbarMobili"
 
 export default function MenuResponsive() {
   return (
