@@ -44,7 +44,7 @@ const Services = () => {
             Serviços
           </CardTitle>
           <CardDescription className="text-muted-foreground dark:text-muted">
-            Conheça os tarbalho que já realizei
+            Conheça os tarbalhos que já realizei
           </CardDescription>
         </CardHeader>
       </Card>

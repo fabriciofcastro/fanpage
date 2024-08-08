@@ -43,7 +43,7 @@ const Projects: React.FC = () => {
             Projetos
           </CardTitle>
           <CardDescription className="text-muted-foreground dark:text-muted">
-            Conheça alguns projeto que já entreguei
+            Conheça alguns projetos que já entreguei
           </CardDescription>
         </CardHeader>
       </Card>
