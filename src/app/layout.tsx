@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     template: "%s | Desenvolvedor de front-end"
   },
   openGraph: {
-    title: "Dev Concept | Desenvolvedor front-end",
+    title: "Fabrício Castro | Desenvolvedor front-end",
     type: "website",
     locale: "pt-BR",
     url: "https://www.fabriciofcastro.com.br/",
