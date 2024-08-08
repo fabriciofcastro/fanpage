@@ -42,7 +42,7 @@ const Services = () => {
           <CardTitle className="flex gap-2">
             <Workflow />
             Serviços
-          </CardTitle>
+          </CardTitle>      
           <CardDescription className="text-muted-foreground dark:text-muted">
             Conheça os tarbalhos que já realizei
           </CardDescription>
