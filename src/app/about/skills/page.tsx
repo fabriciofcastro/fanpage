@@ -7,6 +7,19 @@ import PieChartWithNeedleHTML from './chart/PieChartWithNeedleHTML'
 import PieChartWithNeedleJS from './chart/PieChartWithNeedleJS'
 import ContentInfoSkills from './content-info-skills'
 
+export const metadata = {  
+  title: "Habilidades",
+  description: "Conheça minha habilidade e tecnologia que utilizo para criar soluções.",
+  openGraph: {
+    title: "Habilidades | Fabrício Castro",
+    type: "website",
+    locale: "pt-BR",
+    url: "https://www.fabriciofcastro.com.br/",
+    siteName: "Fabrício Castro Dev"
+  }
+}
+
+
 export default function Skill() {
   return (
     <div className="space-y-4">
@@ -50,7 +63,7 @@ export default function Skill() {
                 <CardTitle>Frameworks & Libraries</CardTitle>
               </CardHeader>
               <CardContent >
-                <BarProgress percentage={ 60 } textLanguage="Reat" textPercentage="60%" />
+                <BarProgress percentage={ 60 } textLanguage="React" textPercentage="60%" />
                 <BarProgress percentage={ 60 } textLanguage="Next" textPercentage="60%" />
                 <BarProgress percentage={ 40 } textLanguage="Styled-Components" textPercentage="40%" />
                 <BarProgress percentage={ 50 } textLanguage="Tailwindcss" textPercentage="50%" />

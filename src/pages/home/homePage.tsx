@@ -11,10 +11,6 @@ import HireMe from "./hire-me"
 export default function HomePage() {
   return (
     <div className="bg-[url('../assets/banner_bg.png')] bg-no-repeat bg-cover">
-      <Head>
-        <title>Meu portfolio</title>
-      </Head>
-
       <div className="mt-24 grid grid-auto-fit-[30.5rem] max-sm:grid-auto-fit gap-12 py-[6rem] max-lg:py-10 max-w-screen-2xl m-auto  ">
         <div className="flex justify-center px-10 flex-col space-y-8 max-lg:order-2">
           <div className="space-y-4">

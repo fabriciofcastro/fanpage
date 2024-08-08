@@ -63,10 +63,10 @@ export default function NavbarLinks() {
               label: "",
               icon: PanelsTopLeft,
               variant: "ghost",
-              href: "/about/project"
+              href: "/about/projects"
             },
             {
-              title: "Trash",
+              title: "Serviços",
               label: "",
               icon: Construction,
               variant: "ghost",

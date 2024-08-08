@@ -52,7 +52,7 @@ export default function NavbarMobile() {
             label: "",
             icon: PanelsTopLeft,
             variant: "ghost",
-            href: "/about/project"
+            href: "/about/projects"
           },
           {
             title: "Serviços",

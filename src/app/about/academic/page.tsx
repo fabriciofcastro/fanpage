@@ -1,12 +1,20 @@
-/**
- * v0 by Vercel.
- * @see https://v0.dev/t/1mrcZgGTiU9
- * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
- */
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { GraduationCap } from "lucide-react"
+import { Metadata } from "next"
 
-export default function Component() {
+export const metadata = {  
+  title: "Serviços",
+  description: "Compartilho insights sobre as soluções que construo, para saber mais sobre o que ofereço e como podemos colaborar.",
+  openGraph: {
+    title: "Serviços | Fabrício Castro",
+    type: "website",
+    locale: "pt-BR",
+    url: "https://www.fabriciofcastro.com.br/",
+    siteName: "Fabrício Castro Dev"
+  }
+}
+
+export default function Academic() {
   return (
     <div className="flex flex-col gap-4">
 

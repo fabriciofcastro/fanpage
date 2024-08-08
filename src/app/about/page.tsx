@@ -1,12 +1,18 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Code } from 'lucide-react'
-import { Metadata } from 'next'
 import Header from './components/headerAbout/header'
 
-export const metadata: Metadata = {
-  description: "descrição about",
+export const metadata = {  
   title: "Sobre",
+  description: "Aqui você conhecerá um pouco mais sobre minha pessoa, vamos nos conhecer!",
+  openGraph: {
+    title: "Sobre | Fabrício Castro",
+    type: "website",
+    locale: "pt-BR",
+    url: "https://www.fabriciofcastro.com.br/",
+    siteName: "Fabrício Castro Dev"
+  }
 }
 
 const Page = () => {
@@ -28,7 +34,7 @@ const Page = () => {
         <CardContent className="bg-[url('../assets/banner_bg.png')] bg-no-repeat bg-cover">
           <div className="space-y-4">
 
-            <p className="indent-2 "> 
+            <p className="indent-2 ">
               Minha trajetória profissional começou como atendente na drogaria JC por três anos e Drogaleste por mais três anos. Essa experiência foi fundamental para o desenvolvimento das minhas habilidades de atendimento ao cliente, comunicação e resolução de problemas.
             </p>
 

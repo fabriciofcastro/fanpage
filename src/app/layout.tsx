@@ -14,16 +14,20 @@ const fontSa = FontSa({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.fabriciofcastro.com.br/"),
   title: {
-    absolute: "",
     default: " Dev Concept | Desenvolvedor de website institucionais",
-    template: "%s | Desenvolvedor de website institucionais"
+    template: "%s | Desenvolvedor de front-end"
   },
   openGraph: {
-    title: "Dev Concept | Desenvolvedor de website institucionais",
+    title: "Dev Concept | Desenvolvedor front-end",
+    type: "website",
+    locale: "pt-BR",
+    url: "https://www.fabriciofcastro.com.br/",
+    siteName: "Fabrício Castro Dev"
 
   },
-  description: "Criamos o site de sua empresa",
+  description: "Fabrício Castro desenvolvedor front-end, aqui tem parte do meu trajeto como desenvolver,  onde mostro minha paixão por software, como serviço (SaaS), website e compartilho insights sobre as soluções que construo. ",
 };
 
 
