@@ -18,7 +18,7 @@ export default function MenuResponsive() {
         <SquareMenu size={22}/>
       </DrawerTrigger>
       <DrawerOverlay />
-      <DrawerContent className=" flex flex-col h-full w-[400px] mt-24 fixed bottom-0 right-0">
+      <DrawerContent className=" flex flex-col h-full w-full mt-24 fixed bottom-0 right-0">
         <DrawerHeader className="flex justify-between">
           <Logo />
           <DrawerClose >
