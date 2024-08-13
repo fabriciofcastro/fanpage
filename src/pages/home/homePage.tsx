@@ -25,7 +25,9 @@ export default function HomePage() {
             <div>
               <h3 className="text-2xl font-semibold text-blueDark-A1">Seja Bem-vindo ao meu website</h3>
               <p>
-                Estou feliz por ter você aqui. Este é o centro onde mostro minha paixão por software, como serviço (SaaS), website e compartilho insights sobre as soluções que construo. Faça um tour para descobrir mais sobre o que ofereço e como podemos colaborar.
+                Estou feliz por ter você aqui. Este é o centro onde mostro minha paixão por software, como serviço (SaaS), 
+                website e compartilho insights sobre as soluções que construo. Faça um tour para descobrir mais sobre o 
+                que ofereço e como podemos colaborar.
               </p>
             </div>
 
