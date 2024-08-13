@@ -1,6 +1,6 @@
 const nextConfig = {
   images: {
-    domains: ['avatars.githubusercontent.com'], // Adicione o domínio necessário
+    domains: ['avatars.githubusercontent.com', "api.microlink.io"], // Adicione o domínio necessário
     formats: ["image/avif"],
   },
 };

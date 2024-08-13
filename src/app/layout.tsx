@@ -16,7 +16,7 @@ const fontSa = FontSa({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.fabriciofcastro.com.br/"),
   title: {
-    default: " Dev Concept | Desenvolvedor de website institucionais",
+    default: " Fabricio Castro | Desenvolvedor front-end",
     template: "%s | Desenvolvedor de front-end"
   },
   openGraph: {

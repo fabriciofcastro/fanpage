@@ -18,7 +18,7 @@ export default function HomePage() {
               <h3 className="text-4xl text-blue-900 max-lg:text-2xl max-md:text-lg">Olá!</h3>
               <h1 className="text-6xl font-semibold max-lg:text-4xl max-md:text-2xl">
                 EU SOU <br />
-                DESENVOLVERDOR <br />
+                DESENVOLVEDOR <br />
                 FRONT-END
               </h1>
             </div>
