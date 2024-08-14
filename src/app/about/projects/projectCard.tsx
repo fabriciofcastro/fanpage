@@ -30,7 +30,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, link }) =
             <Button variant="default" >
               Visualizar Projeto
             </Button>
-          </Link>
+          </Link> 
         </CardContent>
       </Card>
     </motion.div>

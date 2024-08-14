@@ -67,6 +67,7 @@ export default function Skill() {
                 <BarProgress percentage={ 60 } textLanguage="Next" textPercentage="60%" />
                 <BarProgress percentage={ 40 } textLanguage="Styled-Components" textPercentage="40%" />
                 <BarProgress percentage={ 50 } textLanguage="Tailwindcss" textPercentage="50%" />
+                <BarProgress percentage={ 50 } textLanguage="Typescript" textPercentage="60%" />
               </CardContent>
 
             </Card>
