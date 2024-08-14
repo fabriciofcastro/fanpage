@@ -6,7 +6,7 @@ import web3 from '@/assets/image/web3.avif';
 import web4 from '@/assets/image/web4.avif';
 import web5 from '@/assets/image/web5.avif';
 import web6 from '@/assets/image/web6.avif';
-import web7 from '@/assets/image/web7.avif';
+import web7 from '@/assets/image/web7.jpeg';
 
 import { Button } from '@/components/ui/button';
 import { View } from 'lucide-react';
