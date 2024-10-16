@@ -3,7 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Code } from 'lucide-react'
 import Header from './components/headerAbout/header'
 
-export const metadata = {  
+export const metadata = {
   title: "Sobre",
   description: "Aqui você conhecerá um pouco mais sobre minha pessoa, vamos nos conhecer!",
   openGraph: {
@@ -15,9 +15,9 @@ export const metadata = {
   }
 }
 
-const Page = () => {
+function About() {
   return (
-    <>
+    <div className="space-y-6">
       <Header />
       <Card>
         <CardHeader>
@@ -66,10 +66,8 @@ const Page = () => {
           </div>
         </CardContent>
       </Card >
-    </>
+    </div>
   )
 }
 
-
-
-export default Page
+export default About

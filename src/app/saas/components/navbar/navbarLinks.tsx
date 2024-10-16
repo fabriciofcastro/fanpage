@@ -9,7 +9,7 @@ import {
   ChevronRight
 } from "lucide-react"
 import { useState } from "react"
-import { Nav } from "./navbar-about"
+import { Nav } from "./navbar-saas"
 
 export default function NavbarLinks() {
 
@@ -19,15 +19,10 @@ export default function NavbarLinks() {
     setIsCollapsed(() => !isCollapsed)
   }
   return (
-    <Card className={`max-md:hidden transition-all relative duration-500 ${isCollapsed ? "w-20" : "w-64"}`}>
-      <div className="px-3 pt-3 ">
+    <Card className={`max-md:hidden transition-all relative duration-300 ${isCollapsed ? "w-20" : "w-64"}`}>
+      <div className="px-3 pt-3">
         <Button
-          className={` border border-white
-            rounded-md transition-transform duration-300 ease-in-out
-            absolute top-6 p-0 h-7 w-7 ml-3
-            transform
-            ${isCollapsed ? "translate-x-0 " : "translate-x-16"}
-          `}
+          className="rounded-full p-0 h-7 w-7 ml-3"
           variant="secondary"
           onClick={ handleCollapsed }
         >
