@@ -1,18 +1,15 @@
-import type { Config } from "tailwindcss"
-const { fontFamily } = require("tailwindcss/defaultTheme")
+import type { Config } from "tailwindcss";
+import { fontFamily } from "tailwindcss/defaultTheme";
+import flattenColorPalette from "tailwindcss/lib/util/flattenColorPalette";
 
-const {
-  default: flattenColorPalette,
-} = require("tailwindcss/lib/util/flattenColorPalette");
-
-const config = {
+const config: Config = {
   darkMode: ["class"],
   content: [
     './pages/**/*.{ts,tsx}',
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
-	],
+  ],
   prefix: "",
   theme: {
     gridAutoColumns: {
@@ -31,18 +28,17 @@ const config = {
         "-0.2": "-0.2rem",
         "-0.3": "-0.3rem",
         "-0.4": "-0.4rem",
-        "-0.5": "-0.5rem", // Adiciona uma classe -2 para -0.5rem
+        "-0.5": "-0.5rem",
         'custom': 'calc(100vh - 96px)',
       },
-    
       fontFamily: {
-        sans: ["var(--font-sans)", ...fontFamily.sans],
+      
       },
       backgroundImage: {
-        bgAvatar: "url:(../../../assets/vector.png)"
+        bgAvatar: "url('../../../assets/vector.png')", // Corrigido o path da URL
       },
       colors: {
-        "blueDark": {
+        blueDark: {
           A1: '#004df2',
           A2: '#1166fb',
           A3: '#0077ff',
@@ -56,19 +52,19 @@ const config = {
           A11: '#70b8ff',
           A12: '#c2e6ff',
         },
-        "grayDark": {
-            A1: 'hsla(0, 0%, 0%, 0)',
-            A2: 'hsla(0, 0%, 100%, 0.04)',
-            A3: 'hsla(0, 0%, 100%, 0.07)',
-            A4: 'hsla(0, 0%, 100%, 0.11)',
-            A5: 'hsla(0, 0%, 100%, 0.13)',
-            A6: 'hsla(0, 0%, 100%, 0.17)',
-            A7: 'hsla(0, 0%, 100%, 0.23)',
-            A8: 'hsla(0, 0%, 100%, 0.33)',
-            A9: 'hsla(0, 0%, 100%, 0.39)',
-            A10: 'hsla(0, 0%, 100%, 0.45)',
-            A11: 'hsla(0, 0%, 100%, 0.69)',
-            A12: 'hsla(0, 0%, 100%, 0.93)',
+        grayDark: {
+          A1: 'hsla(0, 0%, 0%, 0)',
+          A2: 'hsla(0, 0%, 100%, 0.04)',
+          A3: 'hsla(0, 0%, 100%, 0.07)',
+          A4: 'hsla(0, 0%, 100%, 0.11)',
+          A5: 'hsla(0, 0%, 100%, 0.13)',
+          A6: 'hsla(0, 0%, 100%, 0.17)',
+          A7: 'hsla(0, 0%, 100%, 0.23)',
+          A8: 'hsla(0, 0%, 100%, 0.33)',
+          A9: 'hsla(0, 0%, 100%, 0.39)',
+          A10: 'hsla(0, 0%, 100%, 0.45)',
+          A11: 'hsla(0, 0%, 100%, 0.69)',
+          A12: 'hsla(0, 0%, 100%, 0.93)',
         },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -130,18 +126,19 @@ const config = {
     require('@shrutibalasa/tailwind-grid-auto-fit'),
     require('tailwindcss-debug-screens'),
     addVariablesForColors,
-  ]
-} satisfies Config
+  ],
+}
 
+// Função para adicionar variáveis para as cores
 function addVariablesForColors({ addBase, theme }: any) {
-  let allColors = flattenColorPalette(theme("colors"));
-  let newVars = Object.fromEntries(
+  const allColors = flattenColorPalette(theme("colors"));
+  const newVars = Object.fromEntries(
     Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
   );
- 
+
   addBase({
     ":root": newVars,
   });
 }
 
-export default config
+export default config;
