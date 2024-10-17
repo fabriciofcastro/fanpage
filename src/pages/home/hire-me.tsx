@@ -2,6 +2,7 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Dialog, DialogTrigger } from '@/components/ui/dialog';
+import { Meteors } from '@/components/ui/meteors-effect';
 import { useState } from 'react';
 import DialogHireDedication from './popup-heire-dedication';
 import DialogHireRevision from './popup-heire-revision';
@@ -9,7 +10,7 @@ import DialogHireTalk from './popup-heire-talk';
 
 export default function HireMe() {
 
-  const [isHovered, setIsHovered] = useState(false);
+  const [isHovered, setIsHovered] = useState<boolean>(() => false);
 
   const textCard1 = "Sou uma pessoa dedicada e comprometida, sempre buscando cumprir minhas responsabilidades com excelência e integridade. Valorizo a lealdade e a confiança, tanto em relações pessoais quanto profissionais. Acredito que o compromisso vai além de simplesmente concluir tarefas; trata-se de estar presente, apoiar colegas e contribuir para o sucesso coletivo. Minha abordagem é focada em construir relacionamentos sólidos e duradouros, onde a honestidade e a responsabilidade são fundamentais. Estou sempre disposto a ir além para garantir que as expectativas sejam atendidas e superadas, reafirmando meu compromisso com aqueles que confiam em mim."
 
@@ -19,12 +20,14 @@ export default function HireMe() {
 
   return (
     <div className="px-10 py-12 bg-zinc-800 dark:bg-zinc-500  ">
-      <div className="grid grid-auto-fit-xl gap-6 max-w-screen-2xl m-auto">
+      <div className="grid grid-auto-fit-xl gap-6 max-w-screen-2xl m-auto ">
+
         <Card
-          className=" hover:scale-105 transition-all duration-200 ease-linear shadow-lg"
+          className=" hover:scale-105 transition-all duration-200 ease-linear shadow-lg relative overflow-hidden"
           // onMouseEnter={ () => setIsHovered(true) }
           // onMouseLeave={ () => setIsHovered(false) }
         >
+
           <CardHeader>
             <CardTitle className="text-blueDark-A1">
               Dedicação
@@ -37,7 +40,7 @@ export default function HireMe() {
               </CardContent>
             ) }
           </CardHeader>
-          <CardContent className="relative">
+          <CardContent className="relative overflow-hidden">
             <div className="line-clamp-2 mb-6">
               { textCard1 }
             </div>
@@ -47,10 +50,10 @@ export default function HireMe() {
               </DialogTrigger>
             </Dialog> 
           </CardContent>
-
+          <Meteors number={ 20 } className="absolute top-0 left-0" />
         </Card>
         <Card
-          className=" hover:scale-105 transition-all duration-200 ease-linear shadow-lg "
+          className=" hover:scale-105 transition-all duration-200 ease-linear shadow-lg relative overflow-hidden "
           // onMouseEnter={ () => setIsHovered(true) }
           // onMouseLeave={ () => setIsHovered(false) }
           // onTouchStart={ () => setIsHovered(true) }
@@ -78,9 +81,10 @@ export default function HireMe() {
               </DialogTrigger>
             </Dialog> 
           </CardContent>
+          <Meteors number={ 20 } className="absolute top-0 left-0" />
         </Card >
         <Card
-          className=" hover:scale-105 transition-all duration-200 ease-linear shadow-lg "
+          className=" hover:scale-105 transition-all duration-200 ease-linear shadow-lg relative overflow-hidden"
           // onMouseEnter={ () => setIsHovered(true) }
           // onMouseLeave={ () => setIsHovered(false) }
           // onTouchStart={ () => setIsHovered(true) }
@@ -103,6 +107,7 @@ export default function HireMe() {
               </DialogTrigger>
             </Dialog> 
           </CardContent>
+          <Meteors number={ 20 } className="absolute top-0 left-0" />
         </Card>
       </div>
     </div>
