@@ -1,5 +1,3 @@
-//** @format */
-
 "use client"
 
 import { Button } from "@/components/ui/button"
@@ -13,17 +11,17 @@ import { Nav } from "./navbar-about"
 
 export default function NavbarLinks() {
 
-  const [isCollapsed, setIsCollapsed] = useState(true)
+  const [isCollapsed, setIsCollapsed] = useState<boolean>(() => true)
 
   function handleCollapsed() {
     setIsCollapsed(() => !isCollapsed)
   }
   return (
-    <Card className={`max-md:hidden transition-all relative duration-500 ${isCollapsed ? "w-20" : "w-64"}`}>
+    <Card className={`max-md:hidden relative transition-all duration-200 ${isCollapsed ? "w-20" : "w-60"}`}>
       <div className="px-3 pt-3 ">
         <Button
           className={` border border-white
-            rounded-md transition-transform duration-300 ease-in-out
+            rounded-md transition-transform duration-500 ease-in-out
             absolute top-6 p-0 h-7 w-7 ml-3
             transform
             ${isCollapsed ? "translate-x-0 " : "translate-x-16"}
