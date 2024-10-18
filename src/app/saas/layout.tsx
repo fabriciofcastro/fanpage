@@ -1,6 +1,7 @@
 import theme from '@/providers/ThemeProvider/mui-theme';
-import { ThemeProvider as ThemeProviderMui } from '@mui/material'
-import { SessionProvider } from "next-auth/react"
+import { ThemeProvider as ThemeProviderMui } from '@mui/material';
+import { SessionProvider } from "next-auth/react";
+import { SaasSidebar } from './components/navbar/sidebar';
 
 export default function LayoutSaas({ children }: { children: React.ReactNode }) {
 

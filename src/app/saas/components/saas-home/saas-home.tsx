@@ -1,5 +1,4 @@
 import { SessionProvider } from "next-auth/react";
-import Dashboard from "./dashboad/dashboard";
 import SignIn from "./login/signin";
 
 
@@ -8,7 +7,7 @@ export default function SaasHome() {
     <div>
       <SignIn />
       <SessionProvider>
-        <Dashboard />
+        <h1>Sass</h1>
       </SessionProvider>
     </div>
   )
