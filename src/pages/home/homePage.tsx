@@ -13,6 +13,7 @@ import HireMe from "./hire-me"
 export default function HomePage() {
 
   const [isVisible, setIsVisible] = useState<boolean>(() => false);
+  const [isWords, setIsWords] = useState<boolean>(() => false)
 
   const words = [
     {
@@ -32,12 +33,21 @@ export default function HomePage() {
     }
   ]
 
+  
+
   useEffect(() => {
+    const timerWord = setTimeout(() => {
+      setIsWords(true)
+
+      return () => clearTimeout(timerWord)
+
+    }, 3000)
+
     const timer = setTimeout(() => {
       setIsVisible(true);
-    }, 10000);
+    }, 9000)
 
-    return () => clearTimeout(timer);
+    return () => clearTimeout(timer)
   })
 
   return (
@@ -56,12 +66,17 @@ export default function HomePage() {
             <div>
 
               <TypewriterEffect words={ words } className="text-lg font-semibold text-blueDark-A1" cursorClassName="hidden" />
-
-              <TextGenerateEffect
+              {
+                isWords && (
+                  <TextGenerateEffect
                 className="mt-[-15px]"
                 words="Estou feliz por ter você aqui. Este é o centro onde mostro minha paixão por software, como serviço (SaaS), 
                 website e compartilho insights sobre as soluções que construo. Faça um tour para descobrir mais sobre o 
-                que ofereço e como podemos colaborar." />
+                que ofereço e como podemos colaborar."
+                  />
+                )
+              }
+
             </div>
 
           </div>
